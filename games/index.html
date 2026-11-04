@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0e1821">
+<meta name="description" content="A collection of little browser games by scavia.">
+<title>Games · scavia</title>
+<style>
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--bg:#0e1821;--text:#edf2ed;--muted:#a0b0b5;--line:#2d4248}
+*{box-sizing:border-box}body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 15% 0%,#1b3439 0%,transparent 55%),var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid #b8dccb;outline-offset:5px}
+.shell{max-width:960px;margin:auto;padding:36px 26px 65px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.brand{font-size:14px;font-weight:700;letter-spacing:.08em}.brand span{color:#a4b9b4;font-weight:400}header a{font-size:13px;color:#b4c8ca}
+.hero{padding:70px 0 42px}.eyebrow{font-size:11px;font-weight:650;letter-spacing:.19em;text-transform:uppercase;color:#a7d8c4}.hero h1{font-size:clamp(48px,8vw,83px);letter-spacing:-.065em;font-weight:550;line-height:1.07;margin:13px 0 16px}.hero p{font-size:16px;color:var(--muted);line-height:1.6;max-width:470px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.game{display:block;border:1px solid #3a5157;border-radius:20px;overflow:hidden;background:#14232c;transition:transform .2s,border-color .2s,box-shadow .2s}.game:hover{transform:translateY(-4px);border-color:#88b8aa;box-shadow:0 18px 40px #0004}.art{height:238px;display:grid;place-items:center;position:relative;overflow:hidden}.odds .art{background:radial-gradient(circle at 35% 50%,#557661 0,#284a42 42%,#1b3636 80%)}.glide .art{background:radial-gradient(circle at 60% 40%,#224b60,#102b3c 66%,#0d2232)}.art:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 65%,#0002)}
+.odds-icon{font:88px Georgia,serif;color:#f2cf88;text-shadow:0 7px 34px #0005}.glide-icon{width:112px;height:112px;border:12px solid #83daca;border-radius:26px;transform:rotate(45deg);display:grid;place-items:center;box-shadow:0 0 50px #60d5c425}.glide-icon:before{content:"";width:43px;height:43px;background:#f6bb77;border-radius:50%;box-shadow:0 0 25px #f6bb7780}
+.content{padding:24px 25px 27px}.tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#b2cfc3}.content h2{margin:9px 0;font-weight:550;letter-spacing:-.045em;font-size:32px}.content p{color:#a8bac0;font-size:13px;line-height:1.65;margin:0 0 25px;min-height:43px}.play{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #354b51;padding-top:17px;font-size:13px;font-weight:650;color:#d7ede5}.play span:last-child{font-size:20px}
+footer{font-size:12px;color:#80969d;padding-top:36px}
+@media(max-width:650px){.shell{padding:22px 18px 45px}.hero{padding:50px 0 32px}.grid{grid-template-columns:1fr;gap:16px}.art{height:205px}.content p{min-height:0}.content{padding:21px}}
+@media(prefers-reduced-motion:reduce){.game{transition:none}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header><div class="brand">scavia <span>/ games</span></div><a href="https://github.com/scavia" rel="noopener noreferrer">GitHub ↗</a></header>
+<main>
+<section class="hero"><div class="eyebrow">Little games, big distractions</div><h1>Pick a game.</h1><p>A small collection of browser games. Nothing to install — just choose one and play.</p></section>
+<div class="grid">
+<a class="game odds" href="odds-and-ends.html" aria-label="Play Odds & Ends"><div class="art"><div class="odds-icon" aria-hidden="true">✦</div></div><div class="content"><div class="tag">Adventure · Mental math</div><h2>Odds & Ends</h2><p>Explore Meridian, solve clever challenges, and restore the beacon.</p><div class="play"><span>Play game</span><span aria-hidden="true">→</span></div></div></a>
+<a class="game glide" href="glide.html" aria-label="Play Glide"><div class="art"><div class="glide-icon" aria-hidden="true"></div></div><div class="content"><div class="tag">Puzzle · Strategy</div><h2>Glide</h2><p>Slide across the ice, navigate obstacles, and find your flow.</p><div class="play"><span>Play game</span><span aria-hidden="true">→</span></div></div></a>
+</div>
+</main><footer>Made for a little fun. · scavia</footer>
+</div>
+</body></html>
