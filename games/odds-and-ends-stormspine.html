@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#17282a">
 <meta name="description" content="A complete, offline-friendly pixel-art RPG powered by mental math. Explore Stormspine and the Azure Chain: an island rescue campaign, adaptive mathematical encounters, and a Kraken beyond the chart.">
-<title>Odds & Ends — The Sea That Forgot the Tide · v3.7</title>
+<title>Odds & Ends — The Sea That Forgot the Tide · v3.8</title>
 <style>:root{--bg:#101b20;--panel:#19272b;--panel2:#1e3033;--line:#344344;--ink:#f2ead8;--muted:#9baa9e;--gold:#edc77b;--mint:#b5cfab;--orange:#e59a70;--red:#e99a8b;--shadow:0 18px 70px #0005;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);font-synthesis:none}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 30% 0%,#233536 0,transparent 55%),var(--bg)}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.42}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:4px}button{color:inherit}button,input,select{-webkit-tap-highlight-color:transparent}button{touch-action:manipulation}button svg{width:18px;height:18px;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}h1,h2,h3,p{margin:0}.serif{font-family:Georgia,"Times New Roman",serif}.eyebrow{font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--gold)}
 .app{max-width:1512px;padding:0 36px 20px;margin:0 auto}.topbar{height:94px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #73847726}.brand{display:flex;gap:13px;align-items:center}.brand-icon{width:38px;height:42px;position:relative;display:grid;place-items:center;font-size:27px;color:var(--gold);background:#243536;border:1px solid #49605b;border-radius:9px}.brand h1{font:700 21px Georgia,serif;letter-spacing:1px}.brand p{font-size:9px;color:var(--muted);letter-spacing:2px;margin-top:5px}.topbar-center{color:var(--muted);font-size:11px;letter-spacing:1px;display:flex;align-items:center;gap:10px}.status-dot{width:6px;height:6px;background:var(--mint);border-radius:50%;box-shadow:0 0 9px #b5cfab40}.top-actions{display:flex;gap:8px;align-items:center}.icon-btn{border:1px solid #54635670;background:#1d2e30;border-radius:8px;width:37px;height:37px;display:grid;place-items:center;transition:.15s}.icon-btn:hover{background:#324345;border-color:#95a68a}.mode-pill{font-size:10px;color:var(--mint);border:1px solid #596b5666;padding:7px 11px;border-radius:5px;background:#23332b;letter-spacing:.4px;margin-right:7px}.page-heading{display:flex;align-items:center;justify-content:space-between;margin:25px 0 21px}.page-heading h2{font:400 27px Georgia,serif;letter-spacing:-.5px}.page-heading p{font-size:11px;color:var(--muted);margin-top:7px}.chapter{font-size:10px;letter-spacing:1.5px;color:#c5ba9e;display:flex;align-items:center;gap:10px}.chapter span{color:var(--gold);font-size:16px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:22px}.play-column{min-width:0}.playerbar{height:65px;display:flex;align-items:center;justify-content:space-between;background:#19292c;border:1px solid var(--line);border-radius:10px 10px 0 0;padding:10px 18px}.player-summary{display:flex;align-items:center;gap:10px}.avatar{background:#304342;border:1px solid #64765c;border-radius:7px;width:39px;height:39px;image-rendering:pixelated}.player-name{font-size:12px;font-weight:650}.player-rank{font-size:10px;color:var(--muted);margin-top:4px}.vital-stats{display:flex;align-items:center;gap:22px;font-size:11px}.stat-gold{color:var(--gold)}.stat-seals{color:#d1d9b9}.stat-xp{display:flex;align-items:center;gap:8px;color:var(--muted)}.xp-track{width:65px;height:4px;border-radius:6px;background:#3b4c44;overflow:hidden}.xp-fill{height:100%;background:var(--mint);transition:width .5s}.world-frame{position:relative;overflow:hidden;background:#4f7255;border-left:1px solid #52634f;border-right:1px solid #52634f;isolation:isolate}.world-frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 65px #12332730;pointer-events:none}#world{display:block;width:100%;aspect-ratio:3/2;image-rendering:pixelated;touch-action:none;cursor:crosshair;outline:none}.map-header{position:absolute;top:15px;left:15px;right:15px;display:flex;align-items:flex-start;justify-content:space-between;pointer-events:none;z-index:2;gap:12px}.location-chip{background:#152d28e8;backdrop-filter:blur(5px);border:1px solid #aec59745;padding:9px 12px;border-radius:7px;box-shadow:0 4px 12px #0002}.location-chip strong{font:600 11px ui-sans-serif,sans-serif;display:flex;align-items:center;gap:8px}.location-chip small{font-size:9px;color:#bdcbb1;display:block;margin-top:4px}.coordinates{font-size:9px;color:#d2dcc1;border:1px solid #cad7b03b;background:#1c362cba;border-radius:5px;padding:7px 9px}.map-bottom{position:absolute;bottom:15px;left:15px;right:15px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;pointer-events:none;z-index:2}.controls-chip{font-size:9px;color:#d8dfc4;background:#19332be8;border:1px solid #c2d8b13b;border-radius:6px;padding:9px 10px;line-height:1.8}.controls-chip kbd{font:9px ui-monospace,monospace;background:#a2ba8f21;border:1px solid #b7d3a445;border-radius:3px;padding:2px 4px;margin:0 2px}.map-btn{pointer-events:auto;display:flex;align-items:center;gap:7px;background:#1c332cf5;border:1px solid #afc99b66;color:#e1e7d0;border-radius:7px;padding:11px 12px;font-size:10px;box-shadow:0 3px 12px #0002}.interact-hint{position:absolute;bottom:71px;left:50%;transform:translateX(-50%);z-index:3;padding:9px 17px;background:#f3e9ce;color:#243b31;border:2px solid #bdbe89;border-radius:6px;font-size:11px;box-shadow:0 4px 0 #142e2560;white-space:nowrap;cursor:pointer}.interact-hint kbd{font-weight:700;margin-right:7px}.world-footer{border:1px solid var(--line);border-top:none;padding:13px 16px;display:flex;justify-content:space-between;align-items:center;border-radius:0 0 10px 10px;background:#1b2b2d;font-size:10px;color:var(--muted);gap:12px}.world-footer .objective-text{color:#d7d9bb;display:flex;align-items:center;gap:7px}.objective-icon{color:var(--gold);font-size:15px}.autosave{display:flex;gap:6px;align-items:center;font-size:9px;white-space:nowrap}.autosave i{height:5px;width:5px;border-radius:50%;background:var(--mint)}.below-map{display:flex;align-items:center;justify-content:space-between;margin:18px 3px;color:var(--muted);font-size:10px}.below-map span:last-child{color:#6e8179}.side-panel{display:flex;flex-direction:column;gap:16px}.journal{border:1px solid var(--line);background:#19282b;border-radius:10px;overflow:hidden}.panel-title{padding:19px 18px 16px;display:flex;justify-content:space-between;align-items:center}.panel-title h3{font:400 19px Georgia,serif}.panel-title .count{font-size:10px;color:var(--gold)}.journal-intro{font-size:11px;line-height:1.65;color:var(--muted);padding:0 18px 17px;border-bottom:1px solid #68765330}.quest-list{padding:8px}.quest-card{display:flex;text-align:left;align-items:center;width:100%;gap:11px;padding:12px 10px;border:1px solid transparent;background:transparent;border-radius:7px;transition:.2s}.quest-card:not(:disabled):hover{background:#2b3a34}.quest-card.selected{background:#303e32;border-color:#8b9b6d5c}.quest-glyph{width:33px;height:33px;flex-shrink:0;display:grid;place-items:center;border-radius:6px;background:#263a36;color:var(--gold);font:19px Georgia,serif;border:1px solid #87936b33}.quest-card.complete .quest-glyph{background:#2e493b;color:var(--mint)}.quest-copy{flex:1}.quest-copy strong{font-size:11px;display:block;font-weight:550;line-height:1.45}.quest-copy small{display:block;font-size:9px;color:var(--muted);margin-top:3px}.quest-card.locked{opacity:.42}.quest-mark{font-size:12px;color:var(--gold)}.guild-progress{padding:14px 17px;border-top:1px solid #68765330;background:#20302d;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:var(--muted)}.seal-dots{display:flex;gap:5px}.seal-dot{width:14px;height:14px;transform:rotate(45deg);border:1px solid #6e7961;border-radius:3px;scale:.8}.seal-dot.earned{background:var(--gold);border-color:var(--gold);box-shadow:0 0 8px #edc77b30}.field-notes{border:1px solid var(--line);border-radius:10px;padding:17px 18px;background:#1c2c2c;position:relative}.field-notes h3{font-size:10px;letter-spacing:1.5px;color:var(--gold);font-weight:600;margin-bottom:10px}.field-notes p{font:italic 13px/1.7 Georgia,serif;color:#d2d5bd}.field-notes .note-bottom{font-size:9px;color:#95a489;margin-top:12px;display:flex;justify-content:space-between}.practice-link{background:transparent;border:none;color:var(--mint);font-size:10px;padding:0;text-decoration:underline;text-underline-offset:3px}.footer{margin-top:6px;padding-top:15px;border-top:1px solid #73847726;display:flex;justify-content:space-between;color:#788b83;font-size:9px;letter-spacing:.4px}.footer button{font-size:9px;background:none;border:none;color:#9aaa9c;padding:0}.touch-controls{display:none;justify-content:space-between;align-items:center;padding:13px 10px;background:#1b2b2d;border:1px solid var(--line);border-radius:0 0 10px 10px}.dpad{display:grid;grid-template-columns:35px 35px 35px;grid-template-rows:33px 33px;gap:3px}.dpad button{background:#2d403a;border:1px solid #6e8160;border-radius:5px;font-size:13px;touch-action:none;user-select:none}.dpad [data-dir=up]{grid-column:2}.dpad [data-dir=left]{grid-column:1;grid-row:2}.dpad [data-dir=down]{grid-column:2;grid-row:2}.dpad [data-dir=right]{grid-column:3;grid-row:2}.touch-interact{height:49px;padding:0 24px;background:var(--gold);color:#263630;border:none;border-radius:25px;font-weight:700;font-size:11px}.touch-controls .hint{font-size:9px;text-align:center;color:var(--muted);max-width:100px;line-height:1.5}
@@ -151,7 +151,7 @@
   <section class="field-notes"><h3>THE PRACTICE GARDEN</h3><p style="font-size:12px;font-style:normal;font-family:inherit;line-height:1.75">409 templates. Fifteen disciplines. Fresh ideas and timely reviews.</p><div class="note-bottom"><span id="accuracyLabel">Your first answer awaits.</span><button class="practice-link" id="practiceBtn">Practice →</button></div></section>
  </aside>
 </main>
-<footer class="footer"><span>ODDS & ENDS <span style="opacity:.4">/</span> A mathematical adventure · v3.7 · Research Atlas</span><span><button id="statsBtn">Your progress</button> &nbsp;·&nbsp; <button id="resetFooter">New adventure</button></span></footer>
+<footer class="footer"><span>ODDS & ENDS <span style="opacity:.4">/</span> A mathematical adventure · v3.8 · The Question Voyage</span><span><button id="statsBtn">Your progress</button> &nbsp;·&nbsp; <button id="resetFooter">New adventure</button></span></footer>
 </div>
 <div id="overlay" class="overlay hidden"><section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></section></div>
 <div id="toasts" class="toast-container"></div><div id="liveRegion" class="sr-only" aria-live="polite" aria-atomic="true"></div>
@@ -1450,10 +1450,10 @@ const Campaign = (() => {
 })();
 
 
-/* The Sea That Forgot the Tide — complete research-driven island campaign.
- * Story schema v2. Mathematical banks are intentionally unchanged.
- * Every investigation resolves with one existing question; narrative controls
- * and case notes are scenario mechanics, not additions to the template catalog. */
+/* The Sea That Forgot the Tide — mathematics-first island campaign.
+ * Story schema v2 retained for save compatibility. Travel leads straight to
+ * mathematical trials: no mandatory observation stamps or mechanism menus.
+ * The existing QR bank and independent sprint generators remain unchanged. */
 const Tides = (() => {
  'use strict';
  const quests=[
@@ -1483,19 +1483,14 @@ const Tides = (() => {
    "azure-site-bell": "The water falls just before the underwater bell rings. The harbor record contains alarm frequencies, not a complete explanation of the sea.",
    "azure-site-piazza": "Nera has kept simultaneous records from two detectors. A repeated pattern deserves a test, not an immediate claim that the bell caused it."
   },
-  "intro": "Maris catches your mooring rope before you can tie it. Behind her, a merchant ship rests on exposed stone. “The tide went out. It forgot to come back.” Nera, the harbor researcher, hands you an empty field notebook. Start with what the instruments actually say.",
-  "task": "Inspect two records in Aurelia. Open your working notes and make one numerical check. No return trip is required.",
+  "intro": "Nera studies the impossible tide at Port Aurelia. She places two harbor warning probabilities in front of you: is their relationship really what the authorities claim?",
+  "task": "Meet Nera at Port Aurelia and solve her harbor-probability questions.",
   "after": "Your check distinguishes the stated relationship from an unsupported assumption of independence. Nera pins your calculation above the chart. “First we test the instruments. Then the sea.” A reliable reference gauge is kept at Saltglass Key.",
   "insight": "Write the observation separately from the explanation. A statistical relationship can reject a simple model without naming the cause.",
   "limit": "Checking the stated probabilities is not a significance test on a finite sample. A causal explanation needs further evidence.",
   "glyph": "⚓",
   "reward": 90,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["probability", "statistics", "advanced"],
   "optional": false
  },
  {
@@ -1531,19 +1526,14 @@ const Tides = (() => {
    "azure-site-salt-reference": "The reference was checked independently on shore. Averaging more readings from a miscalibrated instrument will not remove a persistent offset.",
    "azure-site-salt-ledger": "The calibration wheel was reset on the night Stormspine lit. The signed order came from a laboratory called Tideglass."
   },
-  "intro": "“Aurelia says the sea is falling. My gauge says it is rising.” Iris has not changed her methods. Someone has changed a reference setting. Compare the gauge with the certified standard before calling either island a liar.",
-  "task": "Compare the three nearby Saltglass records, then quantify the gauge’s relative error in one question.",
+  "intro": "At Saltglass Key, Iris shows you a certified gauge beside a suspicious reading. The difference has consequences for every ship in the inner sea.",
+  "task": "Reach Iris at the Salt Pans and work through the calibration questions.",
   "after": "With the gauge recalibrated, the two islands agree: water is being pushed away from the inner sea. The maintenance ledger carries an authorization from the Tempest laboratory.",
   "insight": "A repeatable calibration offset is different from random scatter. More repetitions do not by themselves remove systematic error.",
   "limit": "The story supplies repeated calibration evidence. One isolated disagreement would not establish bias.",
   "glyph": "◇",
   "reward": 120,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["statistics", "estimation", "research"],
   "optional": false
  },
  {
@@ -1579,19 +1569,14 @@ const Tides = (() => {
    "azure-npc-witness-eren": "Eren did not see the flash. He heard Mina describe it over breakfast and repeated her description.",
    "azure-npc-witness-tavi": "Tavi copied the same account into the shipping bulletin. Three reports trace back to one observation."
   },
-  "intro": "The Wandering Market is full of stories about a ghost ship. Three confident witnesses describe exactly the same green light. Before multiplying their evidence, trace who actually saw what.",
-  "task": "Talk to the three witnesses on the connected rafts. Combine their reports in one Bayesian check.",
+  "intro": "At the floating market, Mina produces three identical accounts of a ghost ship. Two were copied from her own testimony. How much independent evidence remains?",
+  "task": "Find Mina at the Floating Market and solve the inference challenge.",
   "after": "The three stories collapse to one source, not three independent confirmations. The original timestamp still matters: the lighthouse flashes before every false distress call. Sail north and inspect its controller.",
   "insight": "An exact copy of a report adds no new likelihood ratio once the original is known.",
   "limit": "A shared source does not make an eyewitness false. It changes how much independent support you have.",
   "glyph": "▱",
   "reward": 120,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["bayes", "advanced", "statistics"],
   "optional": false
  },
  {
@@ -1622,19 +1607,14 @@ const Tides = (() => {
    "azure-site-tidepools": "The green receiver repeats a short overlapping signal. Its relay is connected to an offshore command line, not the keeper’s lamp.",
    "azure-site-lighthouse": "Three switches are labeled TRUE LIGHT, FALSE RELAY and LOCAL BYPASS. Fen’s maintenance sketch says: keep the true light and bypass on; isolate the false relay."
   },
-  "intro": "Nobody lives inside the lighthouse now, yet its machinery is sending ships toward the rocks. The Clockwork Lightkeeper defends the command line. Isolate its false signal before facing it.",
-  "task": "Inspect the receiver and cabinet, reroute the lighthouse circuit, then defeat its clockwork guardian.",
+  "intro": "The abandoned lighthouse is sending ships toward rocks. A mechanical guardian guards the relay; the signal will stop only when its mathematical defenses fail.",
+  "task": "Sail to the lighthouse and defeat the Clockwork Lightkeeper in a math duel.",
   "after": "The real lantern sweeps across the sea. The false flare disappears. Under its floor you find a cable running toward Tempest Crown. Nera marks several independent lines of investigation on your chart.",
   "insight": "Overlapping patterns require remembering the relevant recent state, not treating every window as independent.",
   "limit": "The signal exercise uses the explicitly stated random source. A repeating mechanical message is not evidence that the physical sea is an independent coin process.",
   "glyph": "☼",
   "reward": 220,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["brain", "stochastic", "probability"],
   "optional": false,
   "mechanic": "lantern"
  },
@@ -1671,19 +1651,14 @@ const Tides = (() => {
    "azure-site-bridge": "Two comparable basins share rainfall and have open outlets. One receives the engine pulse. The station can briefly interrupt that pulse while keeping the other basin unchanged.",
    "azure-site-canopy": "The root chamber has a timed, reversible bypass. Mossfern insists on a short intervention with a safety observer, not a permanent uncontrolled shutdown."
   },
-  "intro": "The mangroves are drowning while the sea outside retreats. Mossfern refuses to choose a theory by how frightening it sounds. Design a comparison that can separate the explanations. A chained Rootbound Sentinel guards the valve.",
-  "task": "Record the three local observations, choose a controlled experiment, then free the valve from its sentinel.",
+  "intro": "While the ocean retreats, the mangrove basin floods. Mossfern tells you of a controlled intervention—and a sentinel blocking the emergency valve.",
+  "task": "Sail to the mangroves and challenge the Rootbound Sentinel.",
   "after": "When the pulse is interrupted, only the treated basin stops rising. You open the emergency outlet and the boardwalk village drains. The intervention links the artificial pulse to the local flood.",
   "insight": "A controlled intervention can distinguish explanations that fit the same observational pattern.",
   "limit": "This local intervention supports a local mechanism. It does not prove the entire ocean follows the same model.",
   "glyph": "≋",
   "reward": 220,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["research", "bayes", "statistics"],
   "optional": false,
   "mechanic": "roots"
  },
@@ -1715,19 +1690,14 @@ const Tides = (() => {
    "azure-site-abbey": "Alba’s old model is a fair walk between a safe boundary and a dangerous boundary. It specifies independent, equally likely up and down steps and absorbing endpoints.",
    "azure-site-abbey-record": "A maintenance record orders a pump to add an upward push every cycle. The old fair-step assumption no longer describes this intervention."
   },
-  "intro": "At Bellflower, Sister Alba keeps notebooks older than the harbor. Her beautiful model once worked. Now a pump is pushing the system it describes. Recover the baseline calculation, then state honestly what changed.",
-  "task": "Inspect the model and operating rule. Compute one baseline hitting probability, without pretending it still describes forced tides.",
+  "intro": "Sister Alba has a beautiful model of the natural tide: a fair random walk with known boundaries. The engine changed its assumptions. Can you recover what was once true?",
+  "task": "Reach Abbey Island and solve Alba’s stochastic-process challenge.",
   "after": "Alba circles the broken assumption rather than altering her old data. She lends you the equilibrium manuscript. “A correct calculation can answer the wrong question.”",
   "insight": "Boundary conditions and transition assumptions determine a hitting probability. Preserve the model’s scope.",
   "limit": "The fair-walk formula must not be used unchanged after a directional intervention. A new biased-process question is deferred with the future bank expansion.",
   "glyph": "♧",
   "reward": 120,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["stochastic", "advanced", "probability"],
   "optional": false
  },
  {
@@ -1763,19 +1733,14 @@ const Tides = (() => {
    "azure-site-wreck-west": "The Dawn Petrel’s chart was overprinted with the same corridor. A fresh audit page lists the prior traffic weights for the three possible diversion routes.",
    "azure-site-wreck-south": "The Quiet Tern carried no valuable cargo. The likelihood of the recorded beacon evidence differs between the three routes, not between rich and poor ships."
   },
-  "intro": "Three hulls lie along three different crossings. Their cargoes do not match a pirate’s shopping list. Sail to the wrecks, recover their logs, and combine all three route hypotheses before deciding where the evidence points.",
-  "task": "Recover three logs by boat, in any order. Make one inference from your onboard research desk—no courier trip back to Aurelia.",
+  "intro": "Three vanished ships left contradictory route records. Their distinguishing observations are laid out in your captain’s chart; the important task is to update the hypotheses, not recover more paperwork.",
+  "task": "Sail to the Silverwake wreck and solve the missing-ships inference questions.",
   "after": "One route dominates the posterior, but the altered charts all passed through Blacktide’s customs archive. That is a lead, not a conviction. The captain there deserves a question before a verdict.",
   "insight": "Normalize across every live hypothesis. A likely route is not automatically the only possible one.",
   "limit": "The supplied route probabilities are a simplified audit model; they do not establish criminal intent.",
   "glyph": "▱",
   "reward": 160,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["bayes", "advanced", "combinatorics"],
   "optional": false
  },
  {
@@ -1806,19 +1771,14 @@ const Tides = (() => {
    "azure-site-fort": "The official manifest lists only ships searched after they were accused. Captain Mara Voss offers her unfiltered harbor register as well.",
    "azure-site-repair": "The same command code appears on a pirate cutter lost at sea. Blacktide’s own ships are being redirected; its mechanics were not told what the charts controlled."
   },
-  "intro": "Mara Voss refuses to surrender her port to a rumor. She also refuses to ask for blind trust. Compare both records, then face her crew’s challenge. The Tideglass office has been choosing which failures anyone is allowed to see.",
-  "task": "Compare Blacktide’s two records and confront Captain Mara Voss at the fort.",
+  "intro": "Everyone suspects the Blacktide corsairs, but Captain Mara Voss has lost ships too. She offers a mathematical challenge instead of a fight over unverified accusations.",
+  "task": "Reach Blacktide Haven and challenge Mara Voss.",
   "after": "Mara stands down. Her full register contradicts the official accusation, and a Tideglass seal identifies who altered the charts. Her patrols stop treating the Wren as an enemy. Blacktide joins the investigation.",
   "insight": "Evidence against a hypothesis should reduce its odds. Sampling only accused ships can distort the picture.",
   "limit": "An absence of a particular incriminating pattern does not prove innocence by itself; here the independent register supplies the missing context.",
   "glyph": "⚑",
   "reward": 240,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["bayes", "research", "advanced"],
   "optional": false
  },
  {
@@ -1849,19 +1809,14 @@ const Tides = (() => {
    "azure-site-bazaar": "Merchants have compared routes without accounting for the weather each convoy actually encountered. Their pooled ranking hides the different case mix.",
    "azure-site-lagoon": "The weather logs split successful and failed crossings into calm and storm conditions. The two routes did not carry comparable shares of storm voyages."
   },
-  "intro": "Coral’s food ships have stopped. Two brokers brandish percentages that appear to contradict the detailed logs. Saffron opens the ledger on the quay. Compare like conditions, then work out what trustworthy weather information is worth.",
-  "task": "Inspect both reports, compare calm and storm records separately, and solve one decision-value question.",
+  "intro": "Coral Market is short of food. Its merchants claim their pooled statistics prove which trade route is safest—but the weather groups disagree.",
+  "task": "Visit Saffron at Coral Market and solve the decision-and-statistics challenge.",
   "after": "Like-for-like comparisons reverse the misleading pooled ranking. Coral schedules relief voyages using the weather evidence rather than the loudest headline. Stalls reopen beneath the saffron awnings.",
   "insight": "A pooled association can reverse after conditioning on a relevant case-mix variable. Information is valuable only through decisions it can change.",
   "limit": "The story’s route choice assumes weather is the relevant confounder and no other hidden difference remains. The arithmetic check explicitly supplies its own payoffs.",
   "glyph": "◈",
   "reward": 170,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["statistics", "research", "ev"],
   "optional": false,
   "mechanic": "coral"
  },
@@ -1898,19 +1853,14 @@ const Tides = (() => {
    "azure-site-ridge": "Ari kept a separate, unedited log from after the engine began intervening. It was never used to tune the model.",
    "azure-site-summit": "The Warden responds to the recent sequence of sensor states. A memoryless average misses the persistence of its attack sequence."
   },
-  "intro": "Leave the Wren at the quay and climb above the clouds. The Observatory Warden anticipates your approach. Its model looks perfect on yesterday’s records—and fails on today’s sea. Ari has kept the evidence the official report omitted.",
-  "task": "Collect the three records along the switchbacks, choose a genuine validation test, then face the Observatory Warden.",
+  "intro": "Climb the Needle Isles to a silent observatory. Its prediction engine was trained on yesterday’s sea and cannot account for today’s intervention; an ancient Warden has learned its patterns.",
+  "task": "Climb to the Observatory Warden and solve its hard QR problems.",
   "after": "The unedited log exposes the change in the process. The observatory’s true bearings lead to a control installation beneath Tempest Crown. On the voyage down, a vast shadow passes below the Wren without attacking.",
   "insight": "Keep a genuine test set separate from fitting and tuning. A process with memory requires a state that retains relevant history.",
   "limit": "The reused waiting-time problem is an explicit independent-attempt model, not a full learned Markov model of the ocean.",
   "glyph": "△",
   "reward": 240,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["stochastic", "statistics", "computation"],
   "optional": false,
   "mechanic": "bearings"
  },
@@ -1946,19 +1896,14 @@ const Tides = (() => {
    "azure-site-archive": "The Tideglass Engine was built to forecast storms and suggest interventions. The original charter never promised perfect control.",
    "azure-site-amphitheater": "The report draws a loop: observations train the predictor; the predictor changes the tide; the changed tide produces new observations. Old evaluations no longer describe the controlled system."
   },
-  "intro": "The library’s flooded chambers were sealed from within. Sable has protected the last two records from the bells. Reconstruct why the creators abandoned the engine, then pass the Ninth Bell’s keeper to recover its shutdown protocol.",
-  "task": "Inspect the two archive records, reconstruct the feedback loop, and overcome the keeper’s three-part trial.",
+  "intro": "In the Drowned Archive, a warning describes a predictor that alters the system it predicts. The Ninth Bell keeper guards the next stage of the mathematical mystery.",
+  "task": "Enter the Drowned Archive and defeat its keeper with mathematical reasoning.",
   "after": "The engine changes the process it is forecasting. Its creators recognized that feedback and abandoned it. A later hand crossed out their warning. Sable gives you the safe-decoupling protocol, not permission to smash the machine.",
   "insight": "An intervention can change the data-generating process. A mathematical invariant can also show why a proposed repair is impossible.",
   "limit": "The archive explains a specific fictional control loop. The general lesson is to state which assumptions survive an intervention.",
   "glyph": "▥",
   "reward": 260,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["brain", "advanced", "interview"],
   "optional": false,
   "mechanic": "archive"
  },
@@ -1995,19 +1940,14 @@ const Tides = (() => {
    "azure-site-spring-reference": "Edda placed a reference on a separate footing. Its record confirms the common vibration in the other two sensors.",
    "azure-site-spring-controls": "The protocol requires: freeze the automatic controller, open the cooling bypass, then release the spring chamber. Releasing it first would send pressure into the village."
   },
-  "intro": "The seabed is moving. Edda is holding the bathhouse door while every basin inside it rattles. Read the sensors, stabilize the cooling circuit, and face the creature driven out by the tremors. The Wren needs this chamber’s stormglass fittings.",
-  "task": "Compare three nearby station records, operate the cooling controls safely, then face the Emberbound Guardian.",
+  "intro": "Volcanic tremors have reached the hot springs. Edda describes sensors whose errors move together. The Emberbound Guardian blocks the device that can relieve the pressure.",
+  "task": "Confront the Emberbound Guardian on the volcanic island.",
   "after": "The pressure eases. The displaced guardian returns to its spring. Edda fits the Wren with stormglass; a blue line appears along her hull. No extra delivery is needed. Noor is listening for something beneath the sea.",
   "insight": "Joint behavior matters: covariance need not vanish just because two measurements have different labels.",
   "limit": "The numerical check uses a binary sensor model from the existing bank. Continuous localization and estimator design await the later question-bank expansion.",
   "glyph": "♨",
   "reward": 210,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["statistics", "advanced", "computation"],
   "optional": false,
   "mechanic": "springs"
  },
@@ -2039,19 +1979,14 @@ const Tides = (() => {
    "azure-site-starwatch": "The strongest movement responses occur after the engine pulses. Quiet intervals and delayed responses were retained rather than discarded.",
    "azure-site-star-listener": "The short controlled interruption in Mossfern’s basin propagated as a weaker pulse. The next deep response weakened too. The creature was reacting before it was attacking."
   },
-  "intro": "Noor does not call the deep sounds a monster’s voice. She calls them observations. Lay out the acoustic log beside the independently recorded intervention times. Evidence can pull in both directions; do not count only the convenient entries.",
-  "task": "Record the two atoll logs and make one update that accounts for conflicting evidence.",
+  "intro": "Noor has been listening to the Kraken. Its movements follow the engine pulses rather than precede them. The evidence cuts both ways, and a careful update matters.",
+  "task": "Meet Noor on Starwatch Atoll for a Bayesian research challenge.",
   "after": "The Kraken is responding to the engine’s disturbances, not causing the initial failure. It is still dangerous. Understanding a threat does not make it harmless—but it changes what saving the islands will require.",
   "insight": "Update on all relevant evidence, including observations that favor the alternative. Separate timing evidence from causal identification.",
   "limit": "The causal case rests on the earlier controlled intervention as well as timing; correlation alone would be insufficient.",
   "glyph": "✧",
   "reward": 180,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["bayes", "statistics", "research"],
   "optional": false
  },
  {
@@ -2088,19 +2023,14 @@ const Tides = (() => {
    "azure-site-tempest": "Iona preserved every run, including the failures. The controller kept being retuned on the very observations later presented as its test results.",
    "azure-site-stormwalk": "The engine is storing pressure in a closed loop. Cutting all power immediately would release it at the harbors. A controlled bypass is possible."
   },
-  "intro": "Venn did not set out to destroy the sea. He wanted a future with no lost ships, and he stopped recording the futures that contradicted him. The Storm Conductor enforces his last command. Audit his evidence, prepare a safe bypass, and break its defense.",
-  "task": "Inspect the defense, trial register and safety report. Prepare a controlled shutdown before confronting the Storm Conductor.",
+  "intro": "Director Venn restarted the Tideglass Engine to prevent shipwrecks, then ignored the failures his own interventions caused. The Storm Conductor refuses to stand down.",
+  "task": "Sail to Tempest Crown and overcome the Storm Conductor’s advanced problems.",
   "after": "Venn unlocks his console. You freeze the adaptive controller and hold the engine in a stable bypass. The eastern wall remains closed for now: the harbors must be protected before you cross. Venn stays to keep the bypass alive.",
   "insight": "Selection of successful trials and repeated tuning on a test set can manufacture impressive apparent performance.",
   "limit": "The appropriate response to model failure is neither blind trust nor an unplanned shutdown. Explicitly model the consequences of intervention.",
   "glyph": "✦",
   "reward": 320,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["research", "statistics", "stochastic", "computation"],
   "optional": false,
   "mechanic": "engine"
  },
@@ -2137,19 +2067,14 @@ const Tides = (() => {
    "azure-site-lagoon": "Coral’s lagoon absorbs part of the surge. Its relay can join the network without a second visit once you approve the common allocation.",
    "azure-site-fort": "Mara places the cliff station under the same network. The three harbors will share one finite supply of whole shield cells."
   },
-  "intro": "The harbors are not competing for survival. Nera combines their needs into one constrained plan. Survey the three receivers, choose a feasible allocation of the available whole cells, then synchronize all three lights from your research desk.",
-  "task": "Survey the three harbor stations. One optimization question activates the entire network; no second circuit of deliveries.",
+  "intro": "Three harbors need protection, but power cells are scarce. Nera gives you the complete resource constraints and a plan to synchronize all three shields after your calculations.",
+  "task": "Return to Nera in Port Aurelia and solve the shield-allocation trial.",
   "after": "Three pillars of light rise together. The harbor maps show protected berths and the controller records the allocation you verified. Maris gives you the last crossing window. The Wren is ready.",
   "insight": "Choose an explicit objective, respect a hard capacity constraint, and check discrete feasible plans rather than trusting a ratio alone.",
   "limit": "This is a small deterministic allocation model. It does not claim to solve a full robust multi-harbor risk problem.",
   "glyph": "⌁",
   "reward": 230,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["algebra", "computation", "research"],
   "optional": false,
   "relays": [
    [
@@ -2194,19 +2119,14 @@ const Tides = (() => {
    "azure-site-whirl": "A weak current window can be accepted now or replaced once by a fresh observation. The rules commit you to the replacement; there is no unlimited waiting.",
    "azure-site-pressure-station": "The three harbor shields are stable. The buoy marks a navigable corridor through the wall. A Maw Guardian is holding the last channel."
   },
-  "intro": "Beyond the Crown, the map ends in a line of white water. With Venn holding the bypass and the harbors protected, you can open a narrow crossing. Read the waiting rule carefully. Then face the guardian at its mouth.",
-  "task": "Inspect the current and eastern buoy. Choose a route through the wall, then defeat the Maw Guardian to open Farwater.",
+  "intro": "A narrow lane through the eastern wall has appeared. A Maw Guardian tests your ability to reason about stopping rules before the Wren can enter Farwater.",
+  "task": "Sail to the Maw Guardian and win its encounter to open the forbidden sea.",
   "after": "The white wall folds into two safe shoulders. The Wren crosses the old edge of the chart. Beyond it is an enormous circle of still water. The Kraken’s Maw.",
   "insight": "Optimal stopping depends on the actual rules and horizon. A single forced replacement is not an unlimited sequence of retries.",
   "limit": "The crossing problem has one stated replacement opportunity. Do not silently solve a different stopping game.",
   "glyph": "↗",
   "reward": 260,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["stochastic", "ev", "advanced"],
   "optional": false,
   "mechanic": "passage"
  },
@@ -2226,19 +2146,14 @@ const Tides = (() => {
   "checkId": "brain.pattern-race",
   "clues": [],
   "evidence": {},
-  "intro": "The water stops moving. Then the horizon rises. The Kraken’s arms enclose the Wren, and the buried engine pulls the sea into a single impossible rhythm. Read its state, break the coupling, and let it go.",
-  "task": "Enter Farwater by boat. Win three distinct phases; completed phases remain saved after defeat or retreat.",
+  "intro": "The sea goes still, then the horizon rises: the Kraken. Its link to the engine can be broken in three mathematical phases. There is nothing to collect—only the last judgments to make.",
+  "task": "Sail into Farwater and pass the Kraken’s three consecutive mathematical phases.",
   "after": "The connection breaks. The Kraken releases the Wren and sinks toward deeper water. For the first time since Stormspine lit, the sea moves under its own tide.",
   "insight": "Keep your state, evidence and decision rule distinct. The final intervention should follow from the model you actually justified.",
   "limit": "This release uses existing probability and expectation templates in the finale. The larger QR-specific problem library is deliberately deferred.",
   "glyph": "✦",
   "reward": 600,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["stochastic", "advanced", "bayes"],
   "optional": false
  },
  {
@@ -2264,19 +2179,14 @@ const Tides = (() => {
   "evidence": {
    "azure-npc-vale": "Vale writes the stake boundaries first. The game stops at ruin or at the target, with no borrowing or changed stakes mid-game."
   },
-  "intro": "Mara’s patient navigator offers a wager about survival, not about winning the next toss. State the boundaries before doing the calculation.",
-  "task": "Read Vale’s rules and solve one absorbing-walk problem.",
+  "intro": "Vale of Blacktide offers a fair-stake puzzle with absorbing boundaries. What matters is the entire path, not the outcome of the next coin toss.",
+  "task": "Talk to Vale at Blacktide Haven and solve his random-walk questions.",
   "after": "Vale adds your boundary argument to his captain’s notebook. A single favorable result is not the same as a sustainable strategy.",
   "insight": "A stopping boundary changes the question being asked. Check whether the process is actually fair.",
   "limit": "Expected duration and biased variants are not silently inferred from the hitting probability.",
   "glyph": "♠",
   "reward": 130,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["stochastic", "advanced", "probability"],
   "optional": true
  },
  {
@@ -2307,19 +2217,14 @@ const Tides = (() => {
    "azure-site-mill": "Brin’s coin has an unknown, fixed bias. Flips are independent, but a single flip is not a fair assignment rule.",
    "azure-site-abbey": "The trial requires equal assignment probabilities without knowing the coin bias. Repeated attempts are allowed; only the accepted pair determines assignment."
   },
-  "intro": "Alba wants to compare two sail treatments without letting a biased assignment device decide the result. Brin offers a coin. Find a procedure, not a guessed probability.",
-  "task": "Inspect the device and trial plan, then verify one exact randomization method.",
+  "intro": "At Bellflower Abbey, Alba has an unknown-bias coin and a need for a fair experiment. The challenge is to obtain honest randomness from a flawed tool.",
+  "task": "Meet Alba and solve the experimental-design challenge.",
   "after": "The assignment protocol is fair under its stated assumptions. Alba keeps the treatment outcomes separate from the mechanism that assigned them.",
   "insight": "Design the randomization procedure before collecting outcomes.",
   "limit": "Fair assignment alone does not fix every source of experimental bias, and this construction requires independent flips with fixed bias.",
   "glyph": "⚗",
   "reward": 150,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["statistics", "research", "probability"],
   "optional": true
  },
  {
@@ -2350,19 +2255,14 @@ const Tides = (() => {
    "azure-site-archive": "Sable’s sealed samples must all be tested in one round. Each test has two possible outcomes. The readout needs a unique code for each candidate.",
    "azure-site-archive-boxes": "The six outer crates contain a larger set of individually labeled vials. Exactly one is marked; the current inventory, not the number of outer crates, determines the information bound."
   },
-  "intro": "Six crates survived the flood. Inside are labeled vials and a test device that permits only one simultaneous round. Design enough distinct readouts to identify the marked vial.",
-  "task": "Read the rules and inventory. Solve one information-bound question.",
+  "intro": "Six crates hold many individually labelled vials. Sable needs enough distinguishable readouts to find the marked one in a single round.",
+  "task": "Find Sable in the Drowned Archive for an information-theory trial.",
   "after": "Sable copies your coding argument into the archive. The number of possible readouts, not the size of the boxes, limits what can be identified.",
   "insight": "Count distinguishable outcomes before designing a testing scheme.",
   "limit": "The model supplies reliable binary tests and exactly one marked vial; noisy tests require a different analysis.",
   "glyph": "▣",
   "reward": 170,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["combinatorics", "brain", "computation"],
   "optional": true
  },
  {
@@ -2393,19 +2293,14 @@ const Tides = (() => {
    "azure-site-cove": "Lin gives prior odds, not a percentage disguised as odds. The target confidence has to be converted to odds before comparing.",
    "azure-site-gull": "The route message has a likelihood ratio. Repeating its words does not multiply its information."
   },
-  "intro": "A celebrated navigator claims confidence whenever a message sounds certain. Lin wants a rule for how strong the evidence must actually be.",
-  "task": "Inspect the lookout and Driftwood Table protocols; solve one inverse-evidence question aboard the Wren.",
+  "intro": "Navigator Lin claims certainty from a dramatic message, but the likelihood ratio and prior odds tell a less theatrical story.",
+  "task": "Find Lin in Port Aurelia and answer her Bayesian questions.",
   "after": "Lin publishes the evidence threshold beside the navigator’s favorite shortcut. The same words now come with explicit assumptions.",
   "insight": "Work backward from target posterior odds to the necessary likelihood ratio.",
   "limit": "A likelihood ratio is not a posterior probability; both prior information and a defined evidence model are needed.",
   "glyph": "⌖",
   "reward": 140,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["bayes", "statistics", "advanced"],
   "optional": true
  },
  {
@@ -2436,19 +2331,14 @@ const Tides = (() => {
    "azure-site-lagoon": "Ori knows which compartment holds the pearl and always opens empty alternatives. His protocol is fixed before the visitor chooses.",
    "azure-site-bazaar": "Only the initial choice and one alternative stay closed. Changing the reveal rule would change the inference."
   },
-  "intro": "The lagoon keeper turns a lost-pearl rumor into a precise puzzle. He knows the hiding place. That is why his method of revealing empty compartments matters.",
-  "task": "Inspect the reveal protocol, then answer one conditioning question.",
+  "intro": "The lagoon keeper knows where a lost pearl is hidden. His deliberate choice of empty compartments changes the probabilities.",
+  "task": "Visit Ori at Coral Market and solve his conditional-probability challenge.",
   "after": "Ori returns the pearl to its display. You leave with the more valuable habit: always ask how information was selected.",
   "insight": "Conditioning depends on the mechanism that revealed the information.",
   "limit": "The mandatory knowledgeable-host rule is part of the problem. A careless or optional reveal is a different problem.",
   "glyph": "◉",
   "reward": 140,
-  "domains": [
-   "probability",
-   "bayes",
-   "ev",
-   "brain"
-  ],
+  "domains": ["probability", "bayes", "advanced"],
   "optional": true
  }
 ];
@@ -2458,8 +2348,8 @@ const Tides = (() => {
   "subtitle": "Infer the state before you act.",
   "copy": "A short sequence of sonar states repeats beneath the hull. Remember the useful suffix, not every wave.",
   "domains": [
-   "probability",
-   "bayes",
+   "stochastic",
+   "advanced",
    "brain"
   ],
   "checkId": "brain.pattern-race",
@@ -2484,8 +2374,8 @@ const Tides = (() => {
   "copy": "The Wren can hold a safe line or use a forecast to cross the stronger current. Value the information through the action it changes.",
   "domains": [
    "ev",
-   "probability",
-   "brain"
+   "stochastic",
+   "computation"
   ],
   "checkId": "ev.perfect-information",
   "brief": "The safe outer lane stays open. A perfect forecast can justify choosing a different action in each weather state.",
@@ -2509,8 +2399,8 @@ const Tides = (() => {
   "copy": "Two hidden pressure chambers feed the coupling. Use the evidence to infer which chamber is active, then predict the next reading without forgetting that the system has changed.",
   "domains": [
    "bayes",
-   "ev",
-   "probability"
+   "statistics",
+   "advanced"
   ],
   "checkId": "bayes.urn-prediction-chain",
   "brief": "The sample is not replaced. A revised belief and a changed chamber inventory must both be carried into the final prediction.",
@@ -2797,15 +2687,15 @@ const Tides = (() => {
  const deepOpen=s=>finished(s,'passage');
  const clues=(q,s)=>(q.clues||[]).filter(([id])=>!s.tides?.evidence?.[q.id]?.includes(id));
  const missingRelays=()=>[]; // All three shields activate together after the allocation check.
- const actionDone=(q,s)=>!q.mechanic||s.tides?.actions?.[q.id]?.done===true;
- const prepared=(q,s)=>ready(q,s)&&!clues(q,s).length&&actionDone(q,s);
+ const actionDone=(q,s)=>true; // The mathematical encounter resolves the story action.
+ const prepared=(q,s)=>ready(q,s); // No observation or non-math prerequisites.
  const next=s=>quests.find(q=>!q.optional&&!finished(s,q.id)&&ready(q,s))||quests.find(q=>!finished(s,q.id)&&ready(q,s));
- function destination(q,s){return clues(q,s)[0]?.[0]||q.target;}
- function relevant(id,s){return quests.filter(q=>!finished(s,q.id)&&ready(q,s)&&(q.target===id||q.clues?.some(x=>x[0]===id)));}
+ function destination(q,s){return q.target;} // Sail directly to the next question.
+ function relevant(id,s){return quests.filter(q=>!finished(s,q.id)&&ready(q,s)&&q.target===id);}
  function marker(id,s){const a=relevant(id,s);return a.some(q=>q.target===id&&prepared(q,s))?'!':a.length?'◇':'';}
  function pace(settings){return settings.storyPace==='rapid'?'rapid':settings.storyPace==='thoughtful'?'thoughtful':settings.timed?'rapid':'thoughtful';}
  function plan(rank='scout',settings={},phase=0){const rapid=pace(settings)==='rapid',boss=['boss','conductor','kraken'].includes(rank),level=boss?2:Math.max(1,settings.level||0);
-  const table={research:[1,1,1,1],scout:[1,1,5,4],raider:[2,2,6,5],boss:[3,3,8,7],conductor:[4,3,10,9],kraken:[2,2,6,5]};
+  const table={research:[3,2,6,5],scout:[1,1,5,4],raider:[2,2,6,5],boss:[3,3,8,7],conductor:[4,3,10,9],kraken:[2,2,6,5]};
   const n=table[rank]||table.scout;
   return {pace:rapid?'rapid':'thoughtful',rank,boss,level,minLevel:boss||level===2?2:1,rounds:n[rapid?2:0],needed:n[rapid?3:1],profile:level===2?'expert':'steady',extraSeconds:boss?4:rank==='research'?6:2,phase};
  }
@@ -4395,102 +4285,80 @@ const Game = (() => {
   if($('azureTea'))$('azureTea').onclick=()=>{if(state.gold<60||state.tea>=99)return;state.gold-=60;state.tea++;save();updateUI();beep('tea');openAzure(id);toast('One flask of trail tea.');};
  }
 
-  // Research-driven Act II UI. Bundled inside Game; shares save, focus and pause utilities.
+  // Mathematics-first Act II UI. The islands connect themed question sets, not errands.
  // Menus draw on demand. No additional animation loop or network service is used.
  function tideNear(id){const p=Azure.entity(id);return !!p&&state.region==='azure'&&Math.hypot(p.x-Azure.player.x,p.y-Azure.player.y)<(p.kind==='kraken'?230:125)&&!!p.water===(state.azure.mode==='boat');}
  function tideRank(c){return c.rank||(c.kind==='brigand'||c.hostile?'raider':'scout');}
- function tideFormat(p){return p.rank==='research'?'One '+(p.pace==='rapid'?'timed arithmetic verification':'evidence-based question'):p.pace==='rapid'?`${p.rounds} rapid questions · ${p.needed} correct to win`:`${p.rounds} reasoning question${p.rounds===1?'':'s'} · ${p.needed} correct to win`;}
+ function tideFormat(p){const n=p.rounds,k=p.needed;return p.pace==='rapid'?`${n} timed calculations · ${k} correct to advance`:`${n} challenging QR question${n===1?'':'s'} · ${k} correct to advance`;}
  function tidePaceLabel(){return Tides.pace(state.settings)==='rapid'?'Rapid checks & volleys':'Thoughtful research';}
- function tideFieldReady(q){return state.region==='azure'&&q.type==='research'&&Tides.prepared(q,state)&&!Tides.finished(state,q.id);}
+ function tideFieldReady(q){return state.region==='azure'&&q.type==='research'&&Tides.ready(q,state)&&!Tides.finished(state,q.id)&&tideNear(q.target);}
  function tideControlNear(q){return tideNear(q.target)||q.clues.some(([id])=>tideNear(id));}
  function tideSidebar(){
   const s=state.tides,done=Tides.main.filter(q=>Tides.finished(state,q.id)).length;
   if(!Tides.byId[s.tracked]||Tides.finished(state,s.tracked)||!Tides.ready(Tides.byId[s.tracked],state))s.tracked=Tides.next(state)?.id||'kraken';
   const q=Tides.byId[s.tracked];
-  document.querySelector('.journal .panel-title h3').textContent='The research voyage';
+  document.querySelector('.journal .panel-title h3').textContent='The quant voyage';
   document.querySelector('.page-heading h2').textContent=s.won?'The sea remembers its tide.':'The sea that forgot the tide.';
   document.querySelector('.topbar-center').innerHTML='<span class="status-dot"></span>'+esc(s.won?'Scholar of the Azure Chain':tidePaceLabel()+' · Act II');
   $('chapterLabel').textContent=s.won?'EPILOGUE · THE NATURAL TIDE':q.chapter;
-  $('chapterSubtitle').textContent=s.won?'The archipelago is safe. There is always another question.':'Observe. Test. Understand. Seventeen chapters across the Azure Chain.';
+  $('chapterSubtitle').textContent=s.won?'The archipelago is safe. There is always another question.':'Sail. Think. Solve. Seventeen mathematical chapters across the Azure Chain.';
   $('questCount').textContent=`${done} / 17`;
-  $('journalIntro').textContent=s.won?'The Kraken has returned to the deep. Explore five optional research voyages, review your evidence, or replay the island investigation.':'Trace the missing tide. Keep observations separate from explanations, protect the harbors, and confront the deep.';
-  $('questList').innerHTML=Tides.main.map(q=>{const done=Tides.finished(state,q.id),ready=Tides.ready(q,state),n=(state.tides.evidence[q.id]||[]).length;return `<button class="quest-card ${done?'complete':''} ${ready?'':'locked'} ${s.tracked===q.id?'selected':''}" data-tide-quest="${q.id}" aria-label="${done||ready?esc(q.title):'Unrevealed chapter '+q.number}"><span class="quest-glyph">${done?'✓':ready?q.glyph:'·'}</span><span class="quest-copy"><strong>${done||ready?esc(q.title):'Uncharted chapter'}</strong><small>${done?'COMPLETE':!ready?'FOLLOW THE INVESTIGATION':q.type==='research'?Tides.prepared(q,state)?'ONE CHECK · READY':`${n}/${q.clues.length} OBSERVATIONS`:q.id==='kraken'?`${s.krakenPhase}/3 PHASES SECURED`:Tides.prepared(q,state)?'ENCOUNTER READY':`${n}/${q.clues.length} OBSERVATIONS`}</small></span><span class="quest-mark">${s.tracked===q.id?'›':''}</span></button>`;}).join('');
+  $('journalIntro').textContent=s.won?'The Kraken has returned to the deep. Discover five optional quant challenges or revisit the archipelago.':'Every destination brings a new set of QR questions. Solve them to save the archipelago from the Undertow.';
+  $('questList').innerHTML=Tides.main.map(q=>{const done=Tides.finished(state,q.id),ready=Tides.ready(q,state),p=Tides.plan(q.rank,state.settings,state.tides.krakenPhase);return `<button class="quest-card ${done?'complete':''} ${ready?'':'locked'} ${s.tracked===q.id?'selected':''}" data-tide-quest="${q.id}" aria-label="${done||ready?esc(q.title):'Unrevealed chapter '+q.number}"><span class="quest-glyph">${done?'✓':ready?q.glyph:'·'}</span><span class="quest-copy"><strong>${done||ready?esc(q.title):'Uncharted chapter'}</strong><small>${done?'COMPLETE':!ready?'LOCKED · PREVIOUS CHAPTER':q.id==='kraken'?`${s.krakenPhase}/3 KRAKEN PHASES`:tideFormat(p)}</small></span><span class="quest-mark">${s.tracked===q.id?'›':''}</span></button>`;}).join('');
   document.querySelectorAll('[data-tide-quest]').forEach(b=>b.onclick=()=>tideQuest(b.dataset.tideQuest));
   document.querySelector('.guild-progress > span').textContent='Three protected harbors';
   $('sealDots').innerHTML=Tides.byId.signals.relays.map(([id,name])=>`<span class="seal-dot ${s.relays.includes(id)?'earned':''}" title="${esc(name)}"></span>`).join('');
   const dest=Azure.entity(Tides.destination(q,state));
-  $('objectiveText').textContent=s.won?'Five optional research voyages · open the captain’s journal':tideFieldReady(q)?`${q.title} · resolve from your working notes`:`${q.title} · ${dest?.name||'open the investigation'}`;
+  $('objectiveText').textContent=s.won?'Five optional quant voyages · open the chapter journal':`${q.title} · ${dest?.name||'sail to the next challenge'}`;
   $('modePill').textContent=Tides.pace(state.settings)==='rapid'?'RAPID STORY':'THOUGHTFUL STORY';
   $('regionTitle').textContent='The Azure Chain';$('regionBlurb').textContent=`${state.azure.visited.length} shores · ${Tides.deepOpen(state)?'Farwater open':'Eastern wall sealed'}`;
   if(s.won){document.querySelector('.player-name').textContent='Scholar of the Azure Chain';$('playerRank').textContent=`Level ${1+Math.floor(state.xp/150)} · Keeper of a natural tide`;}
  }
  function tideJournal(tab='voyage'){
-  const completed=Tides.main.filter(q=>Tides.finished(state,q.id)).length,optional=Tides.quests.filter(q=>q.optional),ready=optional.filter(q=>Tides.ready(q,state));
+  const completed=Tides.main.filter(q=>Tides.finished(state,q.id)).length;
+  const optional=Tides.quests.filter(q=>q.optional),ready=optional.filter(q=>Tides.ready(q,state));
   const list=tab==='side'?optional:Tides.main;
-  openModal(head('THE UNDERTOW · A RESEARCH VOYAGE','The sea that forgot the tide')+`<div class="modal-body"><div class="research-tabs"><button class="btn ${tab==='voyage'?'primary':'ghost'}" id="journeyMain">Journey · ${completed}/17</button><button class="btn ${tab==='side'?'primary':'ghost'}" id="journeySide">Side voyages · ${ready.length} available</button><button class="btn ghost" id="journeyResearch">Research notebook</button></div><p class="research-lede">An old engine is changing the sea it claims to predict. Follow the evidence across the islands; bring the Wren home without confusing a model with the world.</p>${state.tides.migration&&!state.tides.acknowledged?`<div class="research-migration"><strong>Your previous Undertow save has been transferred.</strong><p>${state.tides.migration.credited} revised chapters were credited to bridge your old milestones. Exploration, gold, companions and both worlds remain intact. Use “Replay island investigation” below to experience the new sequence from its beginning.</p><button class="btn ghost" id="ackMigration">Got it</button></div>`:''}<div class="tide-rule-card"><strong>${tidePaceLabel()}</strong><p>Field investigations end with one check. ${Tides.pace(state.settings)==='rapid'?'Rapid mode substitutes one brief arithmetic verification; enemy volleys use 5–6 short questions. Narrative evidence and controls are never rushed.':'Thoughtful mode uses one case question for an investigation and 1–2 harder questions for ordinary enemies.'} Bosses have longer trials. The reusable question bank is unchanged in this release.</p></div><div class="tide-journal-list">${list.map(q=>{const done=Tides.finished(state,q.id),available=Tides.ready(q,state),n=(state.tides.evidence[q.id]||[]).length;return `<button class="tide-chapter ${done?'done':''}" data-log-quest="${q.id}"><span>${done?'✓':available?q.glyph:'·'}</span><div><strong>${available||done?esc(q.title):'A lead not yet uncovered'}</strong><small>${done?'Complete':available?q.type==='research'?`${n}/${q.clues.length} observations · one concluding check`:q.id==='kraken'?'Three saved phases':`${n}/${q.clues.length} observations · encounter`:'Requires earlier findings'}</small></div><span>→</span></button>`;}).join('')}</div><div class="modal-actions"><button class="btn primary" id="tideChart">Sea chart →</button><button class="btn ghost" id="tideLog">Exploration log</button><button class="btn ghost" data-close>Back to the Wren</button></div><details class="research-replay"><summary>Replay this island investigation</summary><p>Restart only the island story. Keep Stormspine, gold, XP, companions, mathematical records and exploration. Previously paid chapter rewards are not paid again.</p><button class="btn ghost" id="replayStory">Review restart options</button></details></div>`,'tideJournal',true);
+  openModal(head('THE UNDERTOW · QUANT ADVENTURE','The sea that forgot the tide')+`<div class="modal-body"><div class="research-tabs"><button class="btn ${tab==='voyage'?'primary':'ghost'}" id="journeyMain">Adventure · ${completed}/17</button><button class="btn ${tab==='side'?'primary':'ghost'}" id="journeySide">Extra challenges · ${ready.length} open</button><button class="btn ghost" id="journeyResearch">Math notes</button></div><p class="research-lede">An ancient prediction engine is changing the sea. Explore the islands, confront enemies, and advance the mystery by solving mathematical problems—not by collecting observation stamps.</p>${state.tides.migration&&!state.tides.acknowledged?`<div class="research-migration"><strong>Your earlier Undertow progress has been kept.</strong><p>${state.tides.migration.credited} chapters were credited from your previous save. To replay the mathematical campaign, use the island-only restart option below.</p><button class="btn ghost" id="ackMigration">Got it</button></div>`:''}<div class="tide-rule-card"><strong>${tidePaceLabel()}</strong><p>Each stop is a question set. ${Tides.pace(state.settings)==='rapid'?'Research stops: six timed arithmetic questions (five correct to advance). Most roaming enemies: five or six rapid questions.':'Research stops: three thought-provoking QR questions (two correct to advance). Ordinary encounters remain short; bosses are harder.'} No observation recording, switches, or collection errands are required. The 409-template research bank is unchanged.</p></div><div class="tide-journal-list">${list.map(q=>{const done=Tides.finished(state,q.id),available=Tides.ready(q,state),p=Tides.plan(q.rank,state.settings,state.tides.krakenPhase);return `<button class="tide-chapter ${done?'done':''}" data-log-quest="${q.id}"><span>${done?'✓':available?q.glyph:'·'}</span><div><strong>${available||done?esc(q.title):'An undiscovered chapter'}</strong><small>${done?'Completed · mathematical results saved':available?q.id==='kraken'?'Three saved Kraken phases':tideFormat(p):'Unlock through earlier mathematical trials'}</small></div><span>→</span></button>`;}).join('')}</div><div class="modal-actions"><button class="btn primary" id="tideChart">Sea chart →</button><button class="btn ghost" id="tideLog">Exploration log</button><button class="btn ghost" data-close>Back to the Wren</button></div><details class="research-replay"><summary>Replay the island adventure</summary><p>Restart the island chapters but keep Stormspine, gold, XP, companions and mathematical records. You will not be paid the same chapter reward twice.</p><button class="btn ghost" id="replayStory">Review restart options</button></details></div>`,'tideJournal',true);
   modal.querySelectorAll('[data-log-quest]').forEach(b=>b.onclick=()=>tideQuest(b.dataset.logQuest));
   $('journeyMain').onclick=()=>tideJournal('voyage');$('journeySide').onclick=()=>tideJournal('side');$('journeyResearch').onclick=()=>tideDossier();
   $('tideChart').onclick=azureMap;$('tideLog').onclick=captainsLog;$('replayStory').onclick=tideReplayConfirm;
   if($('ackMigration'))$('ackMigration').onclick=()=>{state.tides.acknowledged=true;save();tideJournal(tab);};
  }
- function tideRoute(id,override=null){const q=Tides.byId[id];if(!q||!Tides.ready(q,state))return;state.tides.tracked=id;const dest=override||Tides.destination(q,state);closeModal();if(Azure.walkToNpc(dest)){save();updateUI();toast('Course plotted · '+(Azure.entity(dest)?.name||q.title));}}
- function tideData(q){return `<div class="research-data"><div class="eyebrow">WORKING MODEL · GIVEN DATA</div>${Research.caseQuestion(q,state).caseData.map(([a,b])=>`<div><span>${esc(a)}</span><strong>${esc(b)}</strong></div>`).join('')}</div>`;}
- function tideQuest(id,context=null){
-  const q=Tides.byId[id];if(!q)return;const done=Tides.finished(state,id),ready=Tides.ready(q,state),prepared=Tides.prepared(q,state),near=tideNear(q.target),p=Azure.entity(q.target),plan=Tides.plan(q.rank,state.settings,state.tides.krakenPhase),hasClues=ready&&!Tides.clues(q,state).length;
-  const checks=q.clues.map(([key,label])=>({key,label,done:state.tides.evidence[q.id]?.includes(key)}));
-  const needAction=hasClues&&!Tides.actionDone(q,state),canAct=ready&&!done&&(q.type==='research'?prepared:near&&prepared);
-  openModal(head(ready||done?q.chapter:'THE UNDERTOW',ready||done?q.title:'A lead beyond the current chart')+`<div class="modal-body"><div class="research-case-label">${q.optional?'OPTIONAL CASE':`CASE ${String(q.number).padStart(2,'0')} / 17`}<span>${done?'CLOSED':q.type==='research'?'INVESTIGATION':'ENCOUNTER'}</span></div><p class="dialogue-quote">${esc(done?q.after:ready?q.intro:'Earlier findings will reveal this lead. Keep investigating the chapters already open.')}</p>${ready&&!done?`<div class="research-objective"><strong>Next objective</strong><p>${esc(q.task)}</p></div>`:''}${!ready?`<div class="quest-requirement">First complete: ${q.requires.filter(k=>!Tides.finished(state,k)).map(k=>esc(Tides.byId[k].title)).join(' · ')}.</div>`:''}${context?`<div class="tide-local-note">Observation recorded · ${esc(context.name)}</div>`:''}${ready&&checks.length?`<div class="research-checklist">${checks.map(c=>`<div class="${c.done?'checked':''}"><span>${c.done?'✓':'○'}</span><div>${esc(c.label)}</div>${!c.done&&!done?`<button class="practice-link" data-evidence-route="${c.key}">Go here →</button>`:''}</div>`).join('')}</div>`:''}${ready&&q.mechanic?`<div class="research-status"><span>${Tides.actionDone(q,state)?'✓':'○'}</span><strong>${esc(Research.mechanics[q.mechanic].title)}</strong><small>${Tides.actionDone(q,state)?'Protocol completed':'Field operation required'}</small></div>`:''}${ready&&!done?`<div class="tide-rule-card"><strong>${q.id==='kraken'?`Final confrontation · ${state.tides.krakenPhase}/3 phases secured`:tideFormat(plan)}</strong><p>${q.type==='research'?'With the observations recorded, resolve this case from anywhere in the Azure Chain. An incorrect check keeps your notes and leaves you where you are.':plan.pace==='rapid'?'Each arithmetic question receives its own timer. A failed encounter returns you to your last harbor.':'An evidence-guided opening and a small number of harder questions. Untimed, with hints. Defeat returns you to your last harbor.'} ${q.id==='kraken'?'Each completed phase remains saved.':''}</p></div>`:''}${done?`<div class="research-finding"><strong>Finding</strong><p>${esc(q.insight)}</p><small>${esc(q.limit)}</small></div>`:''}<div class="modal-actions">${canAct?`<button class="btn primary" id="tideAct" autofocus>${q.type==='research'?'Resolve the case · one question':q.id==='kraken'?'Prepare for the Kraken':'Begin encounter'} →</button>`:ready&&!done?needAction&&tideControlNear(q)?'<button class="btn primary" id="tideControl" autofocus>Operate the field controls →</button>':'<button class="btn primary" id="tideFollow" autofocus>Plot course to next stop →</button>':''}<button class="btn ghost" id="tideNotes">Working notes</button><button class="btn ghost" id="tideAll">Campaign journal</button>${q.target==='azure-npc-maris'?'<button class="btn ghost" id="tidePassage">Western passage</button>':''}<button class="btn ghost" data-close>Keep exploring</button></div><p class="small-note">${q.type==='research'?'One collected case, one concluding question—not a quiz for every pickup.':'Your field notes and mechanisms stay completed after a setback. Mathematical trial scores restart, except for secured Kraken phases.'}</p></div>`,'tideQuest',true);
-  modal.querySelectorAll('[data-evidence-route]').forEach(b=>b.onclick=()=>tideRoute(id,b.dataset.evidenceRoute));
-  if($('tideFollow'))$('tideFollow').onclick=()=>tideRoute(id);
-  if($('tideControl'))$('tideControl').onclick=()=>tideMechanism(q);
-  if($('tideAct'))$('tideAct').onclick=()=>{if(q.type==='research'){if(tideFieldReady(q))tideBegin({...p,quest:id,rank:'research',name:q.title,kind:'instrument'},true);}else if(tideNear(q.target)&&Tides.prepared(q,state)&&!Tides.finished(state,id)){const enemy={...p,quest:id,rank:q.rank,domains:q.domains};if(id==='kraken')tideKrakenBrief(enemy);else tideBegin(enemy);}};
-  $('tideAll').onclick=()=>tideJournal();$('tideNotes').onclick=()=>tideDossier(id);if($('tidePassage'))$('tidePassage').onclick=passageMenu;
+ function tideRoute(id){
+  const q=Tides.byId[id];if(!q||!Tides.ready(q,state))return;
+  state.tides.tracked=id;closeModal();if(Azure.walkToNpc(q.target)){save();updateUI();toast('Course plotted · '+(Azure.entity(q.target)?.name||q.title));}
  }
- function tideRecordSite(p){if(p.category!=='site'||state.azure.landmarks.includes(p.id))return;state.azure.landmarks.push(p.id);state.gold+=p.reward;state.xp+=10;azureLog('Landmark · '+p.name);}
- function tideField(q,p){
-  const idx=q.clues.findIndex(c=>c[0]===p.id),data=Research.caseQuestion(q,state).caseData.filter((_,i)=>i%Math.max(1,q.clues.length)===idx);
-  openModal(head(q.optional?'OPTIONAL RESEARCH VOYAGE':`CASE ${String(q.number).padStart(2,'0')} · FIELD OBSERVATION`,p.name)+`<div class="modal-body"><div class="research-field-stamp">OBSERVE FIRST · INTERPRET SECOND</div><p class="dialogue-quote">${esc(q.evidence[p.id])}</p>${data.length?`<div class="research-data">${data.map(([a,b])=>`<div><span>${esc(a)}</span><strong>${esc(b)}</strong></div>`).join('')}</div>`:''}<p class="small-note">Record this observation in <strong>${esc(q.title)}</strong>. The collected case ends with one mathematical check. No question is charged for this individual note.</p><div class="modal-actions"><button class="btn primary" id="recordEvidence" autofocus>Record observation →</button><button class="btn ghost" data-close>Leave it for now</button></div></div>`,'researchField');
-  $('recordEvidence').onclick=()=>{if(!tideNear(p.id)||!Tides.ready(q,state))return;const list=state.tides.evidence[q.id]||(state.tides.evidence[q.id]=[]);if(!list.includes(p.id)){list.push(p.id);tideRecordSite(p);azureLog('Evidence · '+q.title+' · '+p.name);save();updateUI();beep('click');}tideQuest(q.id,p);};
+ function tideData(q){return `<div class="research-data"><div class="eyebrow">THE MATHEMATICAL SETTING</div>${Research.caseQuestion(q,state).caseData.map(([a,b])=>`<div><span>${esc(a)}</span><strong>${esc(b)}</strong></div>`).join('')}</div>`;}
+ function tideQuest(id){
+  const q=Tides.byId[id];if(!q)return;
+  const done=Tides.finished(state,id),ready=Tides.ready(q,state),near=tideNear(q.target),p=Azure.entity(q.target),plan=Tides.plan(q.rank,state.settings,state.tides.krakenPhase),canStart=ready&&!done&&near;
+  openModal(head(ready||done?q.chapter:'THE UNDERTOW',ready||done?q.title:'The next chapter is still hidden')+`<div class="modal-body"><div class="research-case-label">${q.optional?'OPTIONAL CHALLENGE':`CHAPTER ${String(q.number).padStart(2,'0')} / 17`}<span>${done?'COMPLETE':q.rank==='research'?'MATHEMATICAL CASE':'MATHEMATICAL ENCOUNTER'}</span></div><p class="dialogue-quote">${esc(done?q.after:ready?q.intro:'Solve the earlier chapters to uncover this destination.')}</p>${ready&&!done?`<div class="research-objective"><strong>Your destination</strong><p>${esc(q.task)}</p></div><div class="tide-rule-card"><strong>${q.id==='kraken'?`The Kraken · ${state.tides.krakenPhase}/3 phases complete`:tideFormat(plan)}</strong><p>${plan.pace==='rapid'?'Each arithmetic problem is timed separately. The next begins immediately after the answer.':'Thoughtful questions are untimed, with explanations and optional hints.'} ${q.rank==='research'?'There are no collection or observation prerequisites; failing lets you retry from this island.':'Boss encounters are harder. Losing a battle returns you to the last harbor.'}</p></div>`:''}${!ready?`<div class="quest-requirement">First complete: ${q.requires.filter(k=>!Tides.finished(state,k)).map(k=>esc(Tides.byId[k].title)).join(' · ')}.</div>`:''}${done?`<div class="research-finding"><strong>What the mathematics established</strong><p>${esc(q.insight)}</p><small>${esc(q.limit)}</small></div>`:''}<div class="modal-actions">${canStart?`<button class="btn primary" id="tideAct" autofocus>${q.id==='kraken'?'Face the Kraken':q.rank==='research'?'Begin mathematical questions':'Begin mathematical battle'} →</button>`:ready&&!done?'<button class="btn primary" id="tideFollow" autofocus>Travel to the challenge →</button>':''}<button class="btn ghost" id="tideNotes">Math notes</button><button class="btn ghost" id="tideAll">Chapter journal</button><button class="btn ghost" data-close>Continue exploring</button></div>${ready&&!done?'<p class="small-note">Travel is your break between question sets. Completing the mathematical challenge immediately resolves this chapter.</p>':''}</div>`,'tideQuest',true);
+  if($('tideFollow'))$('tideFollow').onclick=()=>tideRoute(id);
+  if($('tideAct'))$('tideAct').onclick=()=>{
+    if(!tideNear(q.target)||!Tides.ready(q,state)||Tides.finished(state,id))return;
+    const enemy={...p,quest:id,rank:q.rank,domains:q.domains,name:q.rank==='research'?q.title:p.name,kind:q.rank==='research'?'instrument':p.kind};
+    tideBegin(enemy,q.rank==='research');
+  };
+  $('tideAll').onclick=()=>tideJournal();$('tideNotes').onclick=()=>tideDossier(id);
  }
  function tideIntercept(id){
   const p=Azure.entity(id);if(!p)return false;
   if(id==='azure-npc-maris'){tideHarbor();return true;}
-  const relevant=Tides.relevant(id,state),tracked=relevant.find(q=>q.id===state.tides.tracked);
-  const q=tracked||relevant.find(q=>!q.optional)||relevant[0];
-  if(q){if(q.clues.some(c=>c[0]===id)&&!state.tides.evidence[q.id]?.includes(id))tideField(q,p);else tideQuest(q.id);return true;}
-  if(id==='azure-npc-nera'){tideDossier();return true;}
-  if(id==='azure-npc-venn'&&Tides.finished(state,'engine')){openModal(head('DIRECTOR VENN · THE GUARDED BYPASS','Keep the complete record.')+`<div class="modal-body"><p class="dialogue-quote">“I kept calling a failed trial a faulty measurement. After a while, there were no failures left on paper. That did not make the sea safe.”</p><p>The director is holding the bypass steady. His full register is now part of the research notebook.</p><div class="modal-actions"><button class="btn primary" id="vennNotes">Read the record</button><button class="btn ghost" data-close>Return to the Wren</button></div></div>`,'researchNPC');$('vennNotes').onclick=()=>tideDossier('engine');return true;}
+  const relevant=Tides.relevant(id,state),q=relevant.find(x=>x.id===state.tides.tracked)||relevant.find(x=>!x.optional)||relevant[0];
+  if(q){tideQuest(q.id);return true;}
+  if(id==='azure-npc-nera'&&state.tides.won){tideDossier();return true;}
+  if(id==='azure-npc-venn'&&Tides.finished(state,'engine')){
+   openModal(head('DIRECTOR VENN','A lesson in research judgment')+`<div class="modal-body"><p class="dialogue-quote">“I excluded every failed run until the model looked perfect. The sea was less impressed.”</p><div class="modal-actions"><button class="btn primary" id="vennNotes">Review the mathematical lesson</button><button class="btn ghost" data-close>Back to the Wren</button></div></div>`,'researchNPC');$('vennNotes').onclick=()=>tideDossier('engine');return true;
+  }
   return false;
  }
- function tideHarbor(){const q=Tides.next(state);openModal(head('PORT AURELIA · CAPTAIN MARIS',state.tides.won?'The first honest tide.':'The harbor cannot wait.')+`<div class="modal-body"><p class="dialogue-quote">“${state.tides.won?'The tide is back, and the records are open. We did not need someone who would promise certainty. We needed someone who would keep asking the right question.':!Tides.finished(state,'alarm')?'The sea has left our ships on stone. Nera is beside the harbor gauge. Start with the bell and the tide-watch. Bring back an explanation, not another rumor.':Tides.deepOpen(state)?'The surveyed passage is open. The harbors are protected. Follow the evidence all the way into the deep.':'A quiet harbor is not the same as a safe one. Read the logs, listen to the people, and keep the Wren moving.'}”</p><div class="modal-actions">${q?'<button class="btn primary" id="harborNext" autofocus>Follow the investigation →</button>':''}<button class="btn ghost" id="harborResearch">Research notebook</button><button class="btn ghost" id="harborJournal">Campaign journal</button><button class="btn ghost" id="harborPassage">Western passage</button><button class="btn ghost" data-close>Back to the marina</button></div></div>`,'tideHarbor');if($('harborNext'))$('harborNext').onclick=()=>tideQuest(q.id);$('harborResearch').onclick=()=>tideDossier();$('harborJournal').onclick=()=>tideJournal();$('harborPassage').onclick=passageMenu;}
+ function tideHarbor(){const q=Tides.next(state);openModal(head('PORT AURELIA · CAPTAIN MARIS',state.tides.won?'The first honest tide.':'The harbor cannot wait.')+`<div class="modal-body"><p class="dialogue-quote">“${state.tides.won?'The tide is back, and the records are open. We did not need someone who would promise certainty. We needed someone who would keep asking the right question.':!Tides.finished(state,'alarm')?'The sea has left our ships on stone. Find Nera by the harbor gauge. Her probability challenge is our first lead.':Tides.deepOpen(state)?'The surveyed passage is open. The harbors are protected. Follow the evidence all the way into the deep.':'A quiet harbor is not the same as a safe one. Sail to your next mathematical challenge. Every answer brings us closer to the truth.'}”</p><div class="modal-actions">${q?'<button class="btn primary" id="harborNext" autofocus>Find the next math challenge →</button>':''}<button class="btn ghost" id="harborResearch">Math notes</button><button class="btn ghost" id="harborJournal">Campaign journal</button><button class="btn ghost" id="harborPassage">Western passage</button><button class="btn ghost" data-close>Back to the marina</button></div></div>`,'tideHarbor');if($('harborNext'))$('harborNext').onclick=()=>tideQuest(q.id);$('harborResearch').onclick=()=>tideDossier();$('harborJournal').onclick=()=>tideJournal();$('harborPassage').onclick=passageMenu;}
  function tideDossier(selected=null){
-  const known=Tides.quests.filter(q=>Tides.ready(q,state)||Tides.finished(state,q.id)||state.tides.evidence[q.id]?.length),q=known.find(q=>q.id===selected)||known.find(q=>q.id===state.tides.tracked)||known[0];
-  if(!q){tideJournal();return;}
-  const recorded=state.tides.evidence[q.id]||[],done=Tides.finished(state,q.id),ready=Tides.ready(q,state),all=!Tides.clues(q,state).length;
-  openModal(head('THE THINGS YOU CAN JUSTIFY','Research notebook')+`<div class="modal-body"><div class="research-desk-head"><label for="researchCase">Case file</label><select id="researchCase">${known.map(x=>`<option value="${x.id}" ${x.id===q.id?'selected':''}>${Tides.finished(state,x.id)?'✓ ':''}${esc(x.title)}</option>`).join('')}</select><span>${recorded.length}/${q.clues.length} observations</span></div><h3 class="research-case-title">${esc(q.title)}</h3><p>${esc(q.task)}</p><div class="research-evidence-grid">${q.clues.map(([id,label])=>`<article class="research-evidence ${recorded.includes(id)?'recorded':''}"><div class="eyebrow">${recorded.includes(id)?'OBSERVATION RECORDED':'NOT YET OBSERVED'}</div><h3>${esc(label)}</h3><p>${recorded.includes(id)?esc(q.evidence[id]):'Visit this source in person. A sightseeing entry does not replace its scientific record.'}</p>${!recorded.includes(id)&&ready?`<button class="practice-link" data-dossier-route="${id}">Plot course →</button>`:''}</article>`).join('')||'<div class="empty-state">The final confrontation combines the evidence carried through the entire voyage.</div>'}</div>${all&&q.id!=='kraken'?tideData(q):''}${q.mechanic&&Tides.actionDone(q,state)?`<div class="research-finding"><strong>Field operation recorded</strong><p>${esc(Research.mechanics[q.mechanic].success)}</p></div>`:''}${done?`<div class="research-finding"><strong>Conclusion</strong><p>${esc(q.insight)}</p><div class="research-limit"><strong>What this does not establish</strong><p>${esc(q.limit)}</p></div></div>`:'<div class="research-open"><strong>Conclusion not yet established.</strong><p>Collect the missing evidence and complete the case check. The notebook does not reveal its answer in advance.</p></div>'}<div class="modal-actions"><button class="btn primary" id="dossierCase">${done?'Read the completed chapter':'Continue this case'} →</button><button class="btn ghost" id="dossierJournal">Campaign journal</button><button class="btn ghost" data-close>Back to the Wren</button></div><p class="small-note">Case questions reuse the existing library. Narrative investigations are fictional; their assumptions are stated explicitly. Research records and arithmetic streaks are kept separate.</p></div>`,'researchNotebook',true);
-  $('researchCase').onchange=()=>tideDossier($('researchCase').value);$('dossierCase').onclick=()=>tideQuest(q.id);$('dossierJournal').onclick=()=>tideJournal();modal.querySelectorAll('[data-dossier-route]').forEach(b=>b.onclick=()=>tideRoute(q.id,b.dataset.dossierRoute));
- }
- function tideMechanism(q){
-  if(!Tides.ready(q,state)||Tides.clues(q,state).length||!tideControlNear(q))return;
-  const m=Research.mechanics[q.mechanic];if(!m)return;
-  let config=m.initial?[...m.initial]:[],step=0,view='pooled',seen=new Set(),solved=false,choice='';
-  function finish(){if(!solved||!tideControlNear(q))return;state.tides.actions[q.id]={done:true,choice};save();updateUI();Azure.clearCache();beep('seal');tideQuest(q.id);}
-  function render(message='',bad=false){
-   let body='';
-   if(m.kind==='switches')body=`<div class="research-circuit">${m.labels.map((label,i)=>`<button class="research-switch ${config[i]?'on':''}" data-switch="${i}" aria-pressed="${config[i]}" ${solved?'disabled':''}><span>${config[i]?'●':'○'}</span><strong>${esc(label)}</strong><small>${config[i]?'ON':'OFF'}</small></button>`).join('')}</div><button class="btn primary" id="applyCircuit" ${solved?'disabled':''}>Test the circuit</button>`;
-   if(m.kind==='choice')body=`<div class="research-options">${m.options.map(x=>`<button class="research-option" data-protocol="${x.id}" ${solved?'disabled':''}><span>→</span>${esc(x.label)}</button>`).join('')}</div>`;
-   if(m.kind==='sequence')body=`<div class="research-sequence">${m.steps.map(([key,label],i)=>`<span class="${i<step?'done':''}">${i<step?'✓':i+1} ${esc(label)}</span>`).join('')}</div><div class="research-options">${[...m.steps].reverse().map(([key,label],i)=>`<button class="research-option" data-step="${key}" ${solved?'disabled':''}>${esc(label)}</button>`).join('')}</div>`;
-   if(m.kind==='strata')body=`<div class="research-tabs">${['pooled','calm','storm'].map(x=>`<button class="btn ${view===x?'primary':'ghost'}" data-stratum="${x}">${x==='pooled'?'All weather':x==='calm'?'Calm voyages':'Storm voyages'}${seen.has(x)?' ✓':''}</button>`).join('')}</div><div class="research-ledger"><div class="research-ledger-head"><span>Route</span><span>Successes / voyages</span><span>Success rate</span></div>${m.table[view].map(([name,s,n])=>`<div><strong>${name}</strong><span>${s} / ${n}</span><strong>${Math.round(100*s/n)}%</strong></div>`).join('')}</div><p class="small-note">Inspect both calm and storm records. The table supplies the data; the concluding mathematical check remains a separate single question from the existing library.</p><button class="btn primary" id="strataDone" ${!seen.has('calm')||!seen.has('storm')||solved?'disabled':''}>Record the like-for-like comparison</button>`;
-   openModal(head('FIELD OPERATION · '+q.title,m.title)+`<div class="modal-body"><p class="research-lede">${esc(m.text)}</p>${body}${message?`<div class="research-operation-result ${bad?'caution':''}" role="status">${esc(message)}</div>`:''}<div class="modal-actions">${solved?'<button class="btn primary" id="saveOperation" autofocus>Record the protocol →</button>':''}<button class="btn ghost" data-close>${solved?'Close without recording':'Keep thinking'}</button></div><p class="small-note">No timer, XP penalty, or damage for exploring a protocol. Your recorded observations remain safe. The completed protocol is saved when you record it.</p></div>`,'researchMechanism',true);
-   modal.querySelectorAll('[data-switch]').forEach(b=>b.onclick=()=>{config[Number(b.dataset.switch)]=!config[Number(b.dataset.switch)];render();});
-   if($('applyCircuit'))$('applyCircuit').onclick=()=>{solved=config.every((v,i)=>v===m.goal[i]);choice=config.map(Number).join('');render(solved?m.success:m.failure,!solved);};
-   modal.querySelectorAll('[data-protocol]').forEach(b=>b.onclick=()=>{const x=m.options.find(o=>o.id===b.dataset.protocol);solved=x.correct===true;choice=x.id;render(x.result,!solved);});
-   modal.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>{if(b.dataset.step===m.steps[step][0]){step++;solved=step===m.steps.length;choice=m.steps.map(x=>x[0]).join('>');render(solved?m.success:'Step recorded. Continue the safe sequence.');}else{step=0;render(m.failure,true);}});
-   modal.querySelectorAll('[data-stratum]').forEach(b=>b.onclick=()=>{view=b.dataset.stratum;seen.add(view);render();});
-   if($('strataDone'))$('strataDone').onclick=()=>{solved=true;choice='weather-strata';render(m.success);};
-   if($('saveOperation'))$('saveOperation').onclick=finish;
-  }
-  render();
+  const known=Tides.quests.filter(q=>Tides.ready(q,state)||Tides.finished(state,q.id));
+  const q=known.find(q=>q.id===selected)||known.find(q=>q.id===state.tides.tracked)||known[0];if(!q){tideJournal();return;}
+  const done=Tides.finished(state,q.id);
+  openModal(head('WHAT YOU HAVE LEARNED','Mathematics notebook')+`<div class="modal-body"><div class="research-desk-head"><label for="researchCase">Chapter</label><select id="researchCase">${known.map(x=>`<option value="${x.id}" ${x.id===q.id?'selected':''}>${Tides.finished(state,x.id)?'✓ ':''}${esc(x.title)}</option>`).join('')}</select><span>${done?'COMPLETED':'NEXT CHALLENGE'}</span></div><h3 class="research-case-title">${esc(q.title)}</h3><p>${esc(q.intro)}</p><div class="research-evidence-grid"><article class="research-evidence recorded"><div class="eyebrow">QUANTITATIVE SKILLS</div><h3>${esc(q.insight)}</h3><p>${esc(q.limit)}</p></article></div>${q.id!=='kraken'?tideData(q):''}${done?`<div class="research-finding"><strong>Conclusion reached</strong><p>${esc(q.after)}</p></div>`:'<div class="research-open"><strong>The mathematical trial is waiting.</strong><p>Travel to the marked character or guardian and begin the questions. No observations need to be collected first.</p></div>'}<div class="modal-actions"><button class="btn primary" id="dossierCase">${done?'Review the chapter':'Travel to the challenge'} →</button><button class="btn ghost" id="dossierJournal">Chapter journal</button><button class="btn ghost" data-close>Back to the Wren</button></div><p class="small-note">These are fictional scenarios built around objectively gradable problems. For detailed worked solutions, use the feedback and mistake notebook.</p></div>`,'researchNotebook',true);
+  $('researchCase').onchange=()=>tideDossier($('researchCase').value);$('dossierCase').onclick=()=>tideQuest(q.id);$('dossierJournal').onclick=()=>tideJournal();
  }
  function tideComplete(q){
   if(Tides.finished(state,q.id))return {gold:0,xp:0};
@@ -4498,15 +4366,15 @@ const Game = (() => {
   state.tides.completed.push(q.id);state.tides.rewarded=[...new Set([...state.tides.rewarded,q.id])];state.gold+=reward.gold;state.xp+=reward.xp;
   if(q.id==='signals')state.tides.relays=q.relays.map(x=>x[0]);
   if(q.id==='kraken'){state.tides.won=true;state.tides.krakenPhase=3;}
-  state.tides.tracked=Tides.next(state)?.id||'kraken';azureLog('Finding recorded · '+q.title);save();updateUI();beep('seal');Azure.clearCache();return reward;
+  state.tides.tracked=Tides.next(state)?.id||'kraken';azureLog('Mathematical challenge · '+q.title);save();updateUI();beep('seal');Azure.clearCache();return reward;
  }
  function tideChapterResult(q,reward={gold:0,xp:0}){
   const next=Tides.next(state);
-  openModal(head(q.optional?'OPTIONAL RESEARCH VOYAGE COMPLETE':`CASE ${String(q.number).padStart(2,'0')} CLOSED`,q.title)+`<div class="modal-body"><div class="tide-chapter-seal">${q.glyph}</div><p class="dialogue-quote">${esc(q.after)}</p><div class="research-finding"><strong>What you established</strong><p>${esc(q.insight)}</p><small>${esc(q.limit)}</small></div>${q.id==='bearings'?'<div class="research-shadow" aria-hidden="true"><span>A shadow moves beneath the Wren.</span></div>':''}<div class="reward-strip"><span>${reward.gold?'+'+reward.gold+' gold · +'+reward.xp+' XP':'Previously paid chapter reward retained'} · saved</span><span>${q.id==='passage'?'FARWATER OPEN':q.id==='springs'?'STORMGLASS KEEL FITTED':q.id==='signals'?'THREE HARBORS PROTECTED':'RESEARCH NOTE RECORDED'}</span></div><div class="modal-actions"><button class="btn primary" data-close autofocus>Continue the voyage →</button>${next?'<button class="btn ghost" id="tideNextChapter">Next lead</button>':''}<button class="btn ghost" id="chapterNotebook">Research notebook</button><button class="btn ghost" id="tideResultChart">Sea chart</button></div></div>`,'tideChapter',true);
+  openModal(head(q.optional?'OPTIONAL RESEARCH VOYAGE COMPLETE':`CASE ${String(q.number).padStart(2,'0')} CLOSED`,q.title)+`<div class="modal-body"><div class="tide-chapter-seal">${q.glyph}</div><p class="dialogue-quote">${esc(q.after)}</p><div class="research-finding"><strong>What you established</strong><p>${esc(q.insight)}</p><small>${esc(q.limit)}</small></div>${q.id==='bearings'?'<div class="research-shadow" aria-hidden="true"><span>A shadow moves beneath the Wren.</span></div>':''}<div class="reward-strip"><span>${reward.gold?'+'+reward.gold+' gold · +'+reward.xp+' XP':'Previously paid chapter reward retained'} · saved</span><span>${q.id==='passage'?'FARWATER OPEN':q.id==='springs'?'STORMGLASS KEEL FITTED':q.id==='signals'?'THREE HARBORS PROTECTED':'MATHEMATICAL CHAPTER COMPLETE'}</span></div><div class="modal-actions"><button class="btn primary" data-close autofocus>Continue the voyage →</button>${next?'<button class="btn ghost" id="tideNextChapter">Next lead</button>':''}<button class="btn ghost" id="chapterNotebook">Math notes</button><button class="btn ghost" id="tideResultChart">Sea chart</button></div></div>`,'tideChapter',true);
   if($('tideNextChapter'))$('tideNextChapter').onclick=()=>tideQuest(next.id);$('chapterNotebook').onclick=()=>tideDossier(q.id);$('tideResultChart').onclick=azureMap;
  }
- function tideReplayConfirm(){openModal(head('A NEW RESEARCH NOTEBOOK','Replay the island investigation?')+`<div class="modal-body"><p>This restarts the seventeen island chapters and five optional voyages, clears their field evidence and closes Farwater. You return to Aurelia.</p><p><strong>Kept:</strong> the complete Stormspine adventure, gold, XP, all mathematical history, Quick Count records, companions and names, visited islands, treasure and exploration records. Chapter rewards already paid are not paid twice.</p><p>Export a backup from Settings before restarting to keep this exact story state.</p><div class="modal-actions"><button class="btn danger" id="confirmIslandReplay">Restart only the island story</button><button class="btn primary" data-close autofocus>Keep this voyage</button></div></div>`,'researchReplay');
-  $('confirmIslandReplay').onclick=()=>{const old=state.tides;state.tides={...Tides.blank(),rewarded:[...old.rewarded],encounters:old.encounters,rapidAnswered:old.rapidAnswered,rapidCorrect:old.rapidCorrect};state.pendingDanger=false;tideBattle=null;Azure.teleport('aurelia');Azure.clearCache();save();updateUI();closeModal();toast('A fresh island investigation. Your other progress is unchanged.');};
+ function tideReplayConfirm(){openModal(head('A NEW MATHEMATICAL VOYAGE','Replay the island campaign?')+`<div class="modal-body"><p>This restarts the seventeen island chapters and five optional challenge routes and closes Farwater. You return to Aurelia. No errands or observation records are needed.</p><p><strong>Kept:</strong> the complete Stormspine adventure, gold, XP, all mathematical history, Quick Count records, companions and names, visited islands, treasure and exploration records. Chapter rewards already paid are not paid twice.</p><p>Export a backup from Settings before restarting to keep this exact story state.</p><div class="modal-actions"><button class="btn danger" id="confirmIslandReplay">Restart only the island story</button><button class="btn primary" data-close autofocus>Keep this voyage</button></div></div>`,'researchReplay');
+  $('confirmIslandReplay').onclick=()=>{const old=state.tides;state.tides={...Tides.blank(),rewarded:[...old.rewarded],encounters:old.encounters,rapidAnswered:old.rapidAnswered,rapidCorrect:old.rapidCorrect};state.pendingDanger=false;tideBattle=null;Azure.teleport('aurelia');Azure.clearCache();save();updateUI();closeModal();toast('A fresh island question voyage. Your other progress is unchanged.');};
  }
  function tideMeet(c){
   if(!state.started||session||sprintRun||tideBattle)return;
@@ -4516,22 +4384,12 @@ const Game = (() => {
   openModal(head(c.water?'ON THE OPEN WATER':hostile?'THE TRAIL IS BLOCKED':'ISLAND WILDLIFE',c.name,!hostile)+`<div class="tide-scene-wrap"><canvas id="tideIntroCanvas" width="740" height="190" aria-hidden="true"></canvas></div><div class="modal-body">${first?'<div class="first-sighting">FIRST ENCOUNTER · A NEW PAGE OPENS</div>':''}<p class="dialogue-quote">${esc(c.text||'A shadow crosses the Wren’s course. Hold your line and think clearly.')}</p><div class="tide-rule-card"><strong>${tideFormat(plan)}</strong><p>${plan.pace==='rapid'?'A fresh timer for every short arithmetic question.':'A small number of challenging reasoning questions. No timer; hints are available.'} Defeat returns you to ${esc(safeTown().name)}. Completed chapters and evidence remain safe.</p></div><div class="modal-actions"><button class="btn primary" id="tideAccept" autofocus>Face the challenge →</button><button class="btn ghost" id="tideDecline">${hostile?'Retreat to harbor':'Leave in peace'}</button></div></div>`,'tideIntro');Azure.tideScene($('tideIntroCanvas'),c,state);
   $('tideAccept').onclick=()=>tideBegin(c);$('tideDecline').onclick=()=>{state.pendingDanger=false;if(hostile){state.stats.rescues++;Azure.respawn();}Azure.protect(8);save();updateUI();closeModal();};
  }
- function tideKrakenBrief(enemy){
-  if(!tideNear(enemy.id)||!Tides.prepared(Tides.byId.kraken,state)||state.tides.won)return;
-  const i=state.tides.krakenPhase,phase=Tides.phases[i];if(!phase)return;
-  let selected=state.tides.phaseTactics[i]===phase.correctTactic;
-  function render(message=''){
-   openModal(head(`THE KRAKEN · PHASE ${i+1} OF 3`,phase.name)+`<div class="tide-scene-wrap"><canvas id="krakenBriefCanvas" width="740" height="220" aria-hidden="true"></canvas></div><div class="modal-body"><p class="dialogue-quote">${esc(phase.copy)}</p><div class="research-objective"><strong>Your evidence matters here</strong><p>${esc(phase.brief)}</p></div><div class="research-options">${phase.tactics.map(([id,label])=>`<button class="research-option" data-tactic="${id}">${esc(label)}</button>`).join('')}</div>${message?`<div class="research-operation-result" role="status">${esc(message)}</div>`:''}<div class="modal-actions"><button class="btn primary" id="krakenBeginPhase" ${selected?'':'disabled'}>Enter phase ${i+1} →</button><button class="btn ghost" data-close>Study the water a little longer</button></div><p class="small-note">Choose the evidence-based approach before starting the mathematical encounter. Narrative planning is untimed. Secured phases remain saved.</p></div>`,'krakenBrief',true);
-   Azure.tideScene($('krakenBriefCanvas'),enemy,state,i);modal.querySelectorAll('[data-tactic]').forEach(b=>b.onclick=()=>{const a=phase.tactics.find(x=>x[0]===b.dataset.tactic);selected=a[0]===phase.correctTactic;if(selected){state.tides.phaseTactics[i]=a[0];save();}render(a[2]);});$('krakenBeginPhase').onclick=()=>{if(selected&&tideNear(enemy.id))tideBegin(enemy);};
-  }
-  render(selected?'Your recorded plan is ready.':'');
- }
  function tideBegin(enemy,research=false){
   if(session||sprintRun||tideBattle)return;
   const q=enemy.quest&&Tides.byId[enemy.quest];if(q&&(!Tides.prepared(q,state)||Tides.finished(state,q.id)))return;
-  if(research){if(!q||!tideFieldReady(q))return;}else if(!tideNear(enemy.id))return;
-  const phase=q?.id==='kraken'?state.tides.krakenPhase:0;if(q?.id==='kraken'&&state.tides.phaseTactics[phase]!==Tides.phases[phase].correctTactic){tideKrakenBrief(enemy);return;}
-  const plan=Tides.plan(research?'research':enemy.rank||tideRank(enemy),state.settings,phase);
+  if(research){if(!q||q.type!=='research'||!tideFieldReady(q))return;}else if(!tideNear(enemy.id))return;
+  const phase=q?.id==='kraken'?state.tides.krakenPhase:0;
+  const plan=Tides.plan(research?'research':enemy.rank||tideRank(enemy),state.settings,phase);if(research&&q.act>=3){plan.level=2;plan.minLevel=2;}
   $('toasts').replaceChildren();tideBattle={enemy:{...enemy},quest:q||null,research,phase,plan,rounds:[],score:0,recent:[...state.tides.recentQuestions],root:null,q:null,stageIndex:0,stageResults:[],stageDone:false,answered:false,hinted:false,stageHinted:false,draft:null,paused:false,deadline:0,started:0,transitionAt:0,remaining:0};
   state.pendingDanger=!research;save();tideNextQuestion();
  }
@@ -4551,7 +4409,7 @@ const Game = (() => {
  }
  function tideRender(){
   const b=tideBattle;if(!b)return;const q=b.q,root=b.root,rapid=b.plan.pace==='rapid',kraken=b.quest?.id==='kraken',phase=kraken?Tides.phases[b.phase]:null;
-  openModal(`<div class="tide-battle-head"><div><div class="eyebrow">${b.research?'ONE CASE · ONE CHECK':kraken?`THE KRAKEN · PHASE ${b.phase+1} OF 3`:b.plan.boss?'BOSS ENCOUNTER':'ISLAND ENCOUNTER'}</div><h2 id="modalTitle">${esc(phase?.name||b.enemy.name)}</h2></div><button class="close" id="tidePauseBtn" aria-label="Pause encounter">Ⅱ</button></div>${!b.research?`<div class="tide-scene-wrap"><canvas id="tideBattleCanvas" width="740" height="200" aria-hidden="true"></canvas>${kraken?`<div class="tide-phase-track">${Tides.phases.map((p,i)=>`<span class="${i<b.phase?'secured':i===b.phase?'active':''}">${i<b.phase?'✓':i+1} ${esc(p.name)}</span>`).join('')}</div>`:''}</div>`:''}<div class="modal-body tide-battle-body">${b.research?`<div class="research-check-intro"><strong>${rapid?'Rapid field verification':'Evidence in, inference out'}</strong><p>${rapid?'The field investigation is untimed. This one brief arithmetic check replaces its longer numerical reasoning question in Rapid mode.':'Your collected evidence supplies the setting. Answer one question using the explicit working model below.'}</p></div>`:`<div class="tide-battle-score"><div><span>${rapid?'RAPID VOLLEY':'THOUGHTFUL ENCOUNTER'}</span><strong>${b.score}<small> / ${b.plan.needed} sound calls needed</small></strong></div><div class="tide-rounds">${Array.from({length:b.plan.rounds},(_,i)=>`<i class="${i<b.rounds.length?b.rounds[i].correct?'hit':'miss':i===b.rounds.length?'current':''}">${i<b.rounds.length?b.rounds[i].correct?'✓':'×':i+1}</i>`).join('')}</div></div>`}${phase?`<p class="tide-phase-copy">${esc(phase.subtitle)}</p>`:''}${root.kind==='staged'?`<div class="step-strip"><span>LINKED REASONING</span>${root.steps.map((_,i)=>`<span class="step-chip ${i===b.stageIndex?'current':''}">${i<b.stageIndex?b.stageResults[i].correct?'✓':'↺':i+1} Step ${i+1}</span>`).join('')}<small>All ${root.steps.length} steps count as one question</small></div><p class="linked-context">${esc(root.story)}</p>`:''}<div class="challenge-top"><span class="question-skill">${esc(q.skill)}</span><span class="question-progress">${Math.min(b.rounds.length+(b.answered?0:1),b.plan.rounds)} / ${b.plan.rounds}</span></div>${rapid?'<div class="timer-track tide-timer"><div class="timer-fill" id="tideTimerFill" style="width:100%"></div></div>':`<p class="question-story">${esc(q.story)}</p>`}<div class="question-equation ${q.expression.length>40?'small':''} ${rapid?'tide-fast-expression':''}">${esc(q.expression)}</div>${tideInput(q,b)}<div class="challenge-bottom">${rapid?'<span class="small-note">Arithmetic only · no shrinking deadline</span>':'<button class="hint-btn" id="tideHint">A little nudge? · −5 XP per question</button>'}<span class="timer-text" id="tideTimerText">${rapid?Math.ceil(b.remaining||q.seconds)+'s':'No timer · think it through'}</span></div><div id="tideHintBox" class="hint-box ${b.stageHinted?'':'hidden'}">${esc(q.hint)}</div><div id="tideFeedback" aria-live="polite"></div><div class="tide-battle-footer"><span>${b.research?'Notes stay saved. An error does not send you to harbor.':kraken?'Completed phases stay saved.':'Defeat returns you to '+esc(safeTown().name)+'.'}</span><button class="practice-link" id="tideRetreat">${b.research?'Close working notes':'Pause / retreat'}</button></div></div>`,'tideBattle',b.research||kraken);
+  openModal(`<div class="tide-battle-head"><div><div class="eyebrow">${b.research?'QUANT RESEARCH · QUESTION SET':kraken?`THE KRAKEN · PHASE ${b.phase+1} OF 3`:b.plan.boss?'BOSS ENCOUNTER':'ISLAND ENCOUNTER'}</div><h2 id="modalTitle">${esc(phase?.name||b.enemy.name)}</h2></div><button class="close" id="tidePauseBtn" aria-label="Pause encounter">Ⅱ</button></div>${!b.research?`<div class="tide-scene-wrap"><canvas id="tideBattleCanvas" width="740" height="200" aria-hidden="true"></canvas>${kraken?`<div class="tide-phase-track">${Tides.phases.map((p,i)=>`<span class="${i<b.phase?'secured':i===b.phase?'active':''}">${i<b.phase?'✓':i+1} ${esc(p.name)}</span>`).join('')}</div>`:''}</div>`:''}<div class="modal-body tide-battle-body">${b.research?`<div class="research-check-intro"><strong>${rapid?'Rapid mental-math training':'Quant research · focused challenge'}</strong><p>${rapid?'Six timed arithmetic problems, five correct to advance. Each receives a fresh timer.':'Three difficult QR questions, two correct to advance. Your first question connects to this island’s story; later questions test related research skills.'}</p><div class="tide-battle-score"><div><span>${rapid?'RAPID QUESTION SET':'THOUGHTFUL QUESTION SET'}</span><strong>${b.score}<small> / ${b.plan.needed} needed</small></strong></div><div class="tide-rounds">${Array.from({length:b.plan.rounds},(_,i)=>`<i class="${i<b.rounds.length?b.rounds[i].correct?'hit':'miss':i===b.rounds.length?'current':''}">${i<b.rounds.length?b.rounds[i].correct?'✓':'×':i+1}</i>`).join('')}</div></div></div>`:`<div class="tide-battle-score"><div><span>${rapid?'RAPID VOLLEY':'THOUGHTFUL ENCOUNTER'}</span><strong>${b.score}<small> / ${b.plan.needed} sound calls needed</small></strong></div><div class="tide-rounds">${Array.from({length:b.plan.rounds},(_,i)=>`<i class="${i<b.rounds.length?b.rounds[i].correct?'hit':'miss':i===b.rounds.length?'current':''}">${i<b.rounds.length?b.rounds[i].correct?'✓':'×':i+1}</i>`).join('')}</div></div>`}${phase?`<p class="tide-phase-copy">${esc(phase.subtitle)}</p>`:''}${root.kind==='staged'?`<div class="step-strip"><span>LINKED REASONING</span>${root.steps.map((_,i)=>`<span class="step-chip ${i===b.stageIndex?'current':''}">${i<b.stageIndex?b.stageResults[i].correct?'✓':'↺':i+1} Step ${i+1}</span>`).join('')}<small>All ${root.steps.length} steps count as one question</small></div><p class="linked-context">${esc(root.story)}</p>`:''}<div class="challenge-top"><span class="question-skill">${esc(q.skill)}</span><span class="question-progress">${Math.min(b.rounds.length+(b.answered?0:1),b.plan.rounds)} / ${b.plan.rounds}</span></div>${rapid?'<div class="timer-track tide-timer"><div class="timer-fill" id="tideTimerFill" style="width:100%"></div></div>':`<p class="question-story">${esc(q.story)}</p>`}<div class="question-equation ${q.expression.length>40?'small':''} ${rapid?'tide-fast-expression':''}">${esc(q.expression)}</div>${tideInput(q,b)}<div class="challenge-bottom">${rapid?'<span class="small-note">Arithmetic only · no shrinking deadline</span>':'<button class="hint-btn" id="tideHint">A little nudge? · −5 XP per question</button>'}<span class="timer-text" id="tideTimerText">${rapid?Math.ceil(b.remaining||q.seconds)+'s':'No timer · think it through'}</span></div><div id="tideHintBox" class="hint-box ${b.stageHinted?'':'hidden'}">${esc(q.hint)}</div><div id="tideFeedback" aria-live="polite"></div><div class="tide-battle-footer"><span>${b.research?'Retry on this island if needed; no observations to repeat.':kraken?'Completed phases stay saved.':'Defeat returns you to '+esc(safeTown().name)+'.'}</span><button class="practice-link" id="tideRetreat">${b.research?'Pause / leave set':'Pause / retreat'}</button></div></div>`,'tideBattle',b.research||kraken);
   if($('tideBattleCanvas'))Azure.tideScene($('tideBattleCanvas'),b.enemy,state,b.phase);
   $('tidePauseBtn').onclick=pauseTide;$('tideRetreat').onclick=pauseTide;
   if($('tideAnswer')){$('tideAnswer').value=typeof b.draft==='string'?b.draft:'';$('tideAnswer').oninput=()=>b.draft=$('tideAnswer').value;}
@@ -4589,13 +4447,13 @@ const Game = (() => {
  function tideFeedback(){
   const b=tideBattle;if(!b)return;const r=b.rounds.at(-1);if(!r)return;const linked=b.root.kind==='staged'?QR.stepSummary(b.root,b.stageResults):null;tideDisable();
   if(b.plan.pace==='rapid'){$('tideFeedback').innerHTML=`<div class="tide-shot ${r.correct?'hit':'miss'}">${r.correct?'✓ Verified.':r.timeout?'Time expired.':'Not quite.'} <strong>${r.correct?b.score+' correct':esc(Maths.display(b.root))}</strong></div>`;return;}
-  $('tideFeedback').innerHTML=`<div class="feedback ${r.correct?'':linked?.correct?'partial':'incorrect'}" role="status"><h3>${linked?esc(linked.title):r.correct?'A justified conclusion.':'Keep the insight.'}</h3><div class="answer-reveal">${r.correct?'Answer':'Correct answer'}: <strong>${esc(Maths.display(b.root))}</strong></div><p>${rich(b.root.solution)}</p>${linked?stepReviewHTML(linked.steps)+`<p class="small-note">${esc(linked.note)}</p>`:''}<div class="feedback-actions"><span class="xp-award">${b.research?'One case check':b.score+' / '+b.plan.needed+' sound calls needed'}</span><button class="btn primary" id="tideContinue">${b.rounds.length>=b.plan.rounds?'See the outcome':'Next question'} →</button></div></div>`;
+  $('tideFeedback').innerHTML=`<div class="feedback ${r.correct?'':linked?.correct?'partial':'incorrect'}" role="status"><h3>${linked?esc(linked.title):r.correct?'A justified conclusion.':'Keep the insight.'}</h3><div class="answer-reveal">${r.correct?'Answer':'Correct answer'}: <strong>${esc(Maths.display(b.root))}</strong></div><p>${rich(b.root.solution)}</p>${linked?stepReviewHTML(linked.steps)+`<p class="small-note">${esc(linked.note)}</p>`:''}<div class="feedback-actions"><span class="xp-award">${b.score+' / '+b.plan.needed+' correct answers needed'}</span><button class="btn primary" id="tideContinue">${b.rounds.length>=b.plan.rounds?'See the outcome':'Next question'} →</button></div></div>`;
   $('tideContinue').onclick=()=>{if(b.rounds.length>=b.plan.rounds)tideFinish();else tideNextQuestion();};requestAnimationFrame(()=>{$('tideContinue')?.focus({preventScroll:true});$('tideFeedback')?.scrollIntoView({block:'nearest'});});
  }
  function tickTide(now){const b=tideBattle;if(!b||b.paused||document.hidden||modalKind!=='tideBattle')return;if(b.transitionAt){if(now>=b.transitionAt){if(b.rounds.length>=b.plan.rounds)tideFinish();else tideNextQuestion();}return;}if(b.plan.pace!=='rapid'||b.answered||b.stageDone)return;b.remaining=Math.max(0,(b.deadline-now)/1000);if($('tideTimerFill')){$('tideTimerFill').style.width=(b.remaining/b.q.seconds*100)+'%';$('tideTimerFill').classList.toggle('urgent',b.remaining<5);}if($('tideTimerText'))$('tideTimerText').textContent=Math.ceil(b.remaining)+'s';if(now>=b.deadline)tideSubmit(null,true);}
  function pauseTide(){
   const b=tideBattle;if(!b||b.paused)return;if(b.plan.pace==='rapid'&&!b.answered&&performance.now()>=b.deadline)tideSubmit(null,true);if(!tideBattle)return;b.paused=true;b.pausedAt=performance.now();
-  openModal(head('TAKE A BREATH',b.research?'Your working notes are paused.':'The sea can wait.',false)+`<div class="modal-body"><p>Your draft and remaining time are preserved. This is the solo story, not the Quick Count leaderboard.</p><p>${b.research?'Leaving keeps all collected evidence. You stay where you are and can restart the single case check later.':`Retreating or reloading returns you to ${esc(safeTown().name)}. Completed chapters, field protocols and secured Kraken phases remain saved.`}</p><div class="reward-strip"><span>${b.score} correct · ${b.rounds.length}/${b.plan.rounds} answered</span><span>${b.quest?.id==='kraken'?state.tides.krakenPhase+'/3 phases secured':tidePaceLabel()}</span></div><div class="modal-actions"><button class="btn primary" id="tideResume" autofocus>Return to the question →</button><button class="btn ghost" id="tideFlee">${b.research?'Close the case for now':'Retreat to harbor'}</button></div></div>`,'tidePause');$('tideResume').onclick=resumeTide;$('tideFlee').onclick=()=>tideFinish(true);
+  openModal(head('TAKE A BREATH',b.research?'Your training set is paused.':'The sea can wait.',false)+`<div class="modal-body"><p>Your draft and remaining time are preserved. This is the solo story, not the Quick Count leaderboard.</p><p>${b.research?'Leaving ends this set. You remain on this island and can immediately restart the mathematical questions.':`Retreating or reloading returns you to ${esc(safeTown().name)}. Completed chapters, field protocols and secured Kraken phases remain saved.`}</p><div class="reward-strip"><span>${b.score} correct · ${b.rounds.length}/${b.plan.rounds} answered</span><span>${b.quest?.id==='kraken'?state.tides.krakenPhase+'/3 phases secured':tidePaceLabel()}</span></div><div class="modal-actions"><button class="btn primary" id="tideResume" autofocus>Return to the question →</button><button class="btn ghost" id="tideFlee">${b.research?'End this question set':'Retreat to harbor'}</button></div></div>`,'tidePause');$('tideResume').onclick=resumeTide;$('tideFlee').onclick=()=>tideFinish(true);
  }
  function resumeTide(){const b=tideBattle;if(!b||!b.paused)return;const pause=performance.now()-b.pausedAt;b.deadline+=pause;b.started+=pause;if(b.transitionAt)b.transitionAt+=pause;b.paused=false;tideRender();}
  function tideReview(b){return `<details class="tide-review"><summary>Review ${b.rounds.length} answered question${b.rounds.length===1?'':'s'}</summary>${b.rounds.map((r,i)=>`<article class="note-card"><div class="eyebrow">${r.correct?'✓ CORRECT':'× REVIEW'} · ${i+1}</div><h3>${esc(r.q.expression)}</h3><p>${esc(r.q.story)}</p><div class="answer-reveal">${esc(Maths.display(r.q))}</div><p>${rich(r.q.solution)}</p></article>`).join('')}</details>`;}
@@ -4607,14 +4465,14 @@ const Game = (() => {
     state.tides.krakenPhase=Math.max(state.tides.krakenPhase,b.phase+1);save();
     if(state.tides.krakenPhase>=3){const reward=tideComplete(q);tideEnding(reward);return;}
     const i=state.tides.krakenPhase;openModal(head('FARWATER · PHASE SECURED',Tides.phases[b.phase].name)+`<div class="modal-body"><div class="tide-chapter-seal">${i} / 3</div><p class="dialogue-quote">${i===1?'The first circle of arms opens. The Wren has room to move. You have read the state; now choose an action that uses what you know.':'The current separates from the Kraken’s movements. The final coupling remains. Update both the hidden-state belief and the physical state before breaking it.'}</p><div class="tide-rule-card"><strong>Phase saved</strong><p>A later defeat or reload does not erase this phase. The next phase starts with a fresh score.</p></div>${tideReview(b)}<div class="modal-actions"><button class="btn primary" id="tideNextPhase" autofocus>Prepare: ${esc(Tides.phases[i].name)} →</button><button class="btn ghost" id="tidePhaseHome">Return to harbor for now</button></div></div>`,'tidePhase',true);
-    $('tideNextPhase').onclick=()=>tideKrakenBrief(enemy);$('tidePhaseHome').onclick=()=>{Azure.respawn();save();updateUI();closeModal();};return;
+    $('tideNextPhase').onclick=()=>{if(tideNear(enemy.id))tideBegin(enemy);else tideQuest('kraken');};$('tidePhaseHome').onclick=()=>{Azure.respawn();save();updateUI();closeModal();};return;
    }
    if(q){state.tides.caseWins[q.id]=true;const reward=tideComplete(q);tideChapterResult(q,reward);modal.querySelector('.modal-body').insertAdjacentHTML('beforeend',tideReview(b));return;}
    state.gold+=enemy.reward||40;state.creatureCooldown[enemy.id]=state.playSeconds+180;
    if(Campaign.species[enemy.kind]){state.bestiary[enemy.kind]=(state.bestiary[enemy.kind]||0)+1;recordSighting(enemy.kind);state.stats.encounters++;}
   }else if(!b.research){state.stats.rescues++;if(!q)state.creatureCooldown[enemy.id]=state.playSeconds+50;Azure.respawn();}
   save();updateUI();const pet=win&&Companions.eligible(enemy.kind);
-  openModal(head(win?'ISLAND ENCOUNTER COMPLETE':b.research?'RESEARCH IS ITERATIVE':'A HARBOR TO COME HOME TO',win?'The crossing is yours.':b.research?'Keep the notes. Revisit the argument.':retreat?'A tactical retreat.':'A setback, not the end.')+`<div class="modal-body"><div class="tide-outcome ${win?'':'lost'}"><span>${win?'✧':b.research?'✎':'⚓'}</span><div><strong>${b.score} / ${b.plan.rounds}</strong><small>${b.plan.needed} correct needed · ${win?'victory':b.research?'field evidence retained':'return to '+esc(safeTown().name)}</small></div></div><p>${win?`${esc(enemy.name)} gives you room to continue. +${enemy.reward||40} gold.${pet?' This creature is now available in the companion diary.':''}`:b.research?'No voyage is lost. All your observations and field controls stay recorded, and you remain at your current location. Read the worked solution before retrying the single check.':'The crew brings the Wren back to your last safe harbor. Your gold, evidence, completed chapters and Kraken phases remain safe.'}</p>${tideReview(b)}<div class="modal-actions">${b.research?'<button class="btn primary" id="retryResearch" autofocus>Return to the case →</button>':'<button class="btn primary" data-close autofocus>Continue the voyage →</button>'}${q&&!b.research?'<button class="btn ghost" id="tideRetryRoute">Plot a return course</button>':''}${pet?'<button class="btn ghost" id="tidePet">Companion diary</button>':''}<button class="btn ghost" id="tideOutcomeJournal">Campaign journal</button>${b.research?'<button class="btn ghost" data-close>Keep exploring</button>':''}</div></div>`,'tideResult',true);
+  openModal(head(win?'ISLAND ENCOUNTER COMPLETE':b.research?'PRACTICE MAKES PROGRESS':'A HARBOR TO COME HOME TO',win?'The crossing is yours.':b.research?'Study the solutions. Try another set.':retreat?'A tactical retreat.':'A setback, not the end.')+`<div class="modal-body"><div class="tide-outcome ${win?'':'lost'}"><span>${win?'✧':b.research?'✎':'⚓'}</span><div><strong>${b.score} / ${b.plan.rounds}</strong><small>${b.plan.needed} correct needed · ${win?'victory':b.research?'no journey lost':'return to '+esc(safeTown().name)}</small></div></div><p>${win?`${esc(enemy.name)} gives you room to continue. +${enemy.reward||40} gold.${pet?' This creature is now available in the companion diary.':''}`:b.research?'Your mathematical attempts are recorded. You remain on this island and can start another set immediately. Read the worked solutions to improve before trying again.':'The crew brings the Wren back to your last safe harbor. Your gold, evidence, completed chapters and Kraken phases remain safe.'}</p>${tideReview(b)}<div class="modal-actions">${b.research?'<button class="btn primary" id="retryResearch" autofocus>Return to the case →</button>':'<button class="btn primary" data-close autofocus>Continue the voyage →</button>'}${q&&!b.research?'<button class="btn ghost" id="tideRetryRoute">Plot a return course</button>':''}${pet?'<button class="btn ghost" id="tidePet">Companion diary</button>':''}<button class="btn ghost" id="tideOutcomeJournal">Campaign journal</button>${b.research?'<button class="btn ghost" data-close>Keep exploring</button>':''}</div></div>`,'tideResult',true);
   if($('retryResearch'))$('retryResearch').onclick=()=>tideQuest(q.id);if($('tideRetryRoute'))$('tideRetryRoute').onclick=()=>tideRoute(q.id);if($('tidePet'))$('tidePet').onclick=()=>notebook('companions');$('tideOutcomeJournal').onclick=()=>tideJournal();
  }
  function tideDawn(canvas,scene=0){
@@ -4640,7 +4498,7 @@ const Game = (() => {
  }
  init();
  // State getters support local diagnostics and automated regression tests.
- return {get state(){return state;},get session(){return session;},get sprintRun(){return sprintRun;},get tideBattle(){return tideBattle;},get modalKind(){return modalKind;},quests,notes,version:'3.7.0'};
+ return {get state(){return state;},get session(){return session;},get sprintRun(){return sprintRun;},get tideBattle(){return tideBattle;},get modalKind(){return modalKind;},quests,notes,version:'3.8.0'};
 })();
 </script>
 </body></html>
