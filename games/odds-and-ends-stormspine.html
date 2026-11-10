@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#17282a">
 <meta name="description" content="A complete, offline-friendly pixel-art RPG powered by mental math. Explore Stormspine and the Azure Chain: an island rescue campaign, adaptive mathematical encounters, and a Kraken beyond the chart.">
-<title>Odds & Ends — The Sea That Forgot the Tide · v3.8</title>
+<title>Odds & Ends — The Sea That Forgot the Tide · v3.8.1</title>
 <style>:root{--bg:#101b20;--panel:#19272b;--panel2:#1e3033;--line:#344344;--ink:#f2ead8;--muted:#9baa9e;--gold:#edc77b;--mint:#b5cfab;--orange:#e59a70;--red:#e99a8b;--shadow:0 18px 70px #0005;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);font-synthesis:none}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 30% 0%,#233536 0,transparent 55%),var(--bg)}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.42}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:4px}button{color:inherit}button,input,select{-webkit-tap-highlight-color:transparent}button{touch-action:manipulation}button svg{width:18px;height:18px;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}h1,h2,h3,p{margin:0}.serif{font-family:Georgia,"Times New Roman",serif}.eyebrow{font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--gold)}
 .app{max-width:1512px;padding:0 36px 20px;margin:0 auto}.topbar{height:94px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #73847726}.brand{display:flex;gap:13px;align-items:center}.brand-icon{width:38px;height:42px;position:relative;display:grid;place-items:center;font-size:27px;color:var(--gold);background:#243536;border:1px solid #49605b;border-radius:9px}.brand h1{font:700 21px Georgia,serif;letter-spacing:1px}.brand p{font-size:9px;color:var(--muted);letter-spacing:2px;margin-top:5px}.topbar-center{color:var(--muted);font-size:11px;letter-spacing:1px;display:flex;align-items:center;gap:10px}.status-dot{width:6px;height:6px;background:var(--mint);border-radius:50%;box-shadow:0 0 9px #b5cfab40}.top-actions{display:flex;gap:8px;align-items:center}.icon-btn{border:1px solid #54635670;background:#1d2e30;border-radius:8px;width:37px;height:37px;display:grid;place-items:center;transition:.15s}.icon-btn:hover{background:#324345;border-color:#95a68a}.mode-pill{font-size:10px;color:var(--mint);border:1px solid #596b5666;padding:7px 11px;border-radius:5px;background:#23332b;letter-spacing:.4px;margin-right:7px}.page-heading{display:flex;align-items:center;justify-content:space-between;margin:25px 0 21px}.page-heading h2{font:400 27px Georgia,serif;letter-spacing:-.5px}.page-heading p{font-size:11px;color:var(--muted);margin-top:7px}.chapter{font-size:10px;letter-spacing:1.5px;color:#c5ba9e;display:flex;align-items:center;gap:10px}.chapter span{color:var(--gold);font-size:16px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:22px}.play-column{min-width:0}.playerbar{height:65px;display:flex;align-items:center;justify-content:space-between;background:#19292c;border:1px solid var(--line);border-radius:10px 10px 0 0;padding:10px 18px}.player-summary{display:flex;align-items:center;gap:10px}.avatar{background:#304342;border:1px solid #64765c;border-radius:7px;width:39px;height:39px;image-rendering:pixelated}.player-name{font-size:12px;font-weight:650}.player-rank{font-size:10px;color:var(--muted);margin-top:4px}.vital-stats{display:flex;align-items:center;gap:22px;font-size:11px}.stat-gold{color:var(--gold)}.stat-seals{color:#d1d9b9}.stat-xp{display:flex;align-items:center;gap:8px;color:var(--muted)}.xp-track{width:65px;height:4px;border-radius:6px;background:#3b4c44;overflow:hidden}.xp-fill{height:100%;background:var(--mint);transition:width .5s}.world-frame{position:relative;overflow:hidden;background:#4f7255;border-left:1px solid #52634f;border-right:1px solid #52634f;isolation:isolate}.world-frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 65px #12332730;pointer-events:none}#world{display:block;width:100%;aspect-ratio:3/2;image-rendering:pixelated;touch-action:none;cursor:crosshair;outline:none}.map-header{position:absolute;top:15px;left:15px;right:15px;display:flex;align-items:flex-start;justify-content:space-between;pointer-events:none;z-index:2;gap:12px}.location-chip{background:#152d28e8;backdrop-filter:blur(5px);border:1px solid #aec59745;padding:9px 12px;border-radius:7px;box-shadow:0 4px 12px #0002}.location-chip strong{font:600 11px ui-sans-serif,sans-serif;display:flex;align-items:center;gap:8px}.location-chip small{font-size:9px;color:#bdcbb1;display:block;margin-top:4px}.coordinates{font-size:9px;color:#d2dcc1;border:1px solid #cad7b03b;background:#1c362cba;border-radius:5px;padding:7px 9px}.map-bottom{position:absolute;bottom:15px;left:15px;right:15px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;pointer-events:none;z-index:2}.controls-chip{font-size:9px;color:#d8dfc4;background:#19332be8;border:1px solid #c2d8b13b;border-radius:6px;padding:9px 10px;line-height:1.8}.controls-chip kbd{font:9px ui-monospace,monospace;background:#a2ba8f21;border:1px solid #b7d3a445;border-radius:3px;padding:2px 4px;margin:0 2px}.map-btn{pointer-events:auto;display:flex;align-items:center;gap:7px;background:#1c332cf5;border:1px solid #afc99b66;color:#e1e7d0;border-radius:7px;padding:11px 12px;font-size:10px;box-shadow:0 3px 12px #0002}.interact-hint{position:absolute;bottom:71px;left:50%;transform:translateX(-50%);z-index:3;padding:9px 17px;background:#f3e9ce;color:#243b31;border:2px solid #bdbe89;border-radius:6px;font-size:11px;box-shadow:0 4px 0 #142e2560;white-space:nowrap;cursor:pointer}.interact-hint kbd{font-weight:700;margin-right:7px}.world-footer{border:1px solid var(--line);border-top:none;padding:13px 16px;display:flex;justify-content:space-between;align-items:center;border-radius:0 0 10px 10px;background:#1b2b2d;font-size:10px;color:var(--muted);gap:12px}.world-footer .objective-text{color:#d7d9bb;display:flex;align-items:center;gap:7px}.objective-icon{color:var(--gold);font-size:15px}.autosave{display:flex;gap:6px;align-items:center;font-size:9px;white-space:nowrap}.autosave i{height:5px;width:5px;border-radius:50%;background:var(--mint)}.below-map{display:flex;align-items:center;justify-content:space-between;margin:18px 3px;color:var(--muted);font-size:10px}.below-map span:last-child{color:#6e8179}.side-panel{display:flex;flex-direction:column;gap:16px}.journal{border:1px solid var(--line);background:#19282b;border-radius:10px;overflow:hidden}.panel-title{padding:19px 18px 16px;display:flex;justify-content:space-between;align-items:center}.panel-title h3{font:400 19px Georgia,serif}.panel-title .count{font-size:10px;color:var(--gold)}.journal-intro{font-size:11px;line-height:1.65;color:var(--muted);padding:0 18px 17px;border-bottom:1px solid #68765330}.quest-list{padding:8px}.quest-card{display:flex;text-align:left;align-items:center;width:100%;gap:11px;padding:12px 10px;border:1px solid transparent;background:transparent;border-radius:7px;transition:.2s}.quest-card:not(:disabled):hover{background:#2b3a34}.quest-card.selected{background:#303e32;border-color:#8b9b6d5c}.quest-glyph{width:33px;height:33px;flex-shrink:0;display:grid;place-items:center;border-radius:6px;background:#263a36;color:var(--gold);font:19px Georgia,serif;border:1px solid #87936b33}.quest-card.complete .quest-glyph{background:#2e493b;color:var(--mint)}.quest-copy{flex:1}.quest-copy strong{font-size:11px;display:block;font-weight:550;line-height:1.45}.quest-copy small{display:block;font-size:9px;color:var(--muted);margin-top:3px}.quest-card.locked{opacity:.42}.quest-mark{font-size:12px;color:var(--gold)}.guild-progress{padding:14px 17px;border-top:1px solid #68765330;background:#20302d;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:var(--muted)}.seal-dots{display:flex;gap:5px}.seal-dot{width:14px;height:14px;transform:rotate(45deg);border:1px solid #6e7961;border-radius:3px;scale:.8}.seal-dot.earned{background:var(--gold);border-color:var(--gold);box-shadow:0 0 8px #edc77b30}.field-notes{border:1px solid var(--line);border-radius:10px;padding:17px 18px;background:#1c2c2c;position:relative}.field-notes h3{font-size:10px;letter-spacing:1.5px;color:var(--gold);font-weight:600;margin-bottom:10px}.field-notes p{font:italic 13px/1.7 Georgia,serif;color:#d2d5bd}.field-notes .note-bottom{font-size:9px;color:#95a489;margin-top:12px;display:flex;justify-content:space-between}.practice-link{background:transparent;border:none;color:var(--mint);font-size:10px;padding:0;text-decoration:underline;text-underline-offset:3px}.footer{margin-top:6px;padding-top:15px;border-top:1px solid #73847726;display:flex;justify-content:space-between;color:#788b83;font-size:9px;letter-spacing:.4px}.footer button{font-size:9px;background:none;border:none;color:#9aaa9c;padding:0}.touch-controls{display:none;justify-content:space-between;align-items:center;padding:13px 10px;background:#1b2b2d;border:1px solid var(--line);border-radius:0 0 10px 10px}.dpad{display:grid;grid-template-columns:35px 35px 35px;grid-template-rows:33px 33px;gap:3px}.dpad button{background:#2d403a;border:1px solid #6e8160;border-radius:5px;font-size:13px;touch-action:none;user-select:none}.dpad [data-dir=up]{grid-column:2}.dpad [data-dir=left]{grid-column:1;grid-row:2}.dpad [data-dir=down]{grid-column:2;grid-row:2}.dpad [data-dir=right]{grid-column:3;grid-row:2}.touch-interact{height:49px;padding:0 24px;background:var(--gold);color:#263630;border:none;border-radius:25px;font-weight:700;font-size:11px}.touch-controls .hint{font-size:9px;text-align:center;color:var(--muted);max-width:100px;line-height:1.5}
@@ -151,7 +151,7 @@
   <section class="field-notes"><h3>THE PRACTICE GARDEN</h3><p style="font-size:12px;font-style:normal;font-family:inherit;line-height:1.75">409 templates. Fifteen disciplines. Fresh ideas and timely reviews.</p><div class="note-bottom"><span id="accuracyLabel">Your first answer awaits.</span><button class="practice-link" id="practiceBtn">Practice →</button></div></section>
  </aside>
 </main>
-<footer class="footer"><span>ODDS & ENDS <span style="opacity:.4">/</span> A mathematical adventure · v3.8 · The Question Voyage</span><span><button id="statsBtn">Your progress</button> &nbsp;·&nbsp; <button id="resetFooter">New adventure</button></span></footer>
+<footer class="footer"><span>ODDS & ENDS <span style="opacity:.4">/</span> A mathematical adventure · v3.8.1 · The Question Voyage</span><span><button id="statsBtn">Your progress</button> &nbsp;·&nbsp; <button id="resetFooter">New adventure</button></span></footer>
 </div>
 <div id="overlay" class="overlay hidden"><section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></section></div>
 <div id="toasts" class="toast-container"></div><div id="liveRegion" class="sr-only" aria-live="polite" aria-atomic="true"></div>
@@ -219,32 +219,54 @@ const Maths = (() => {
  (l,r)=>{const prior=choose([2,3,4],r),lr=choose([2,3,5],r);return {...prob(`Prior odds of a real signal versus noise are 1:${prior}. The observed pattern is ${lr} times as likely under noise as under a real signal. What is the updated probability of a real signal?`,`Evidence favors noise by ${lr}:1`,1,1+prior*lr,'The evidence favors the opposite hypothesis. Divide the real-to-noise odds by the likelihood factor.',`The real-to-noise likelihood ratio is 1/${lr}, so the posterior odds are 1:${prior*lr}. Probability of real signal = <b>1/${1+prior*lr} ≈ ${fmt(100/(1+prior*lr))}%</b>.`),skill:'Evidence against a hypothesis',seconds:55};},
  (l,r)=>{const heads=choose([1,2,3],r),pA=3**heads/(3**heads+1),pred=.75*pA+.25*(1-pA);return num('Posterior prediction',`One coin is selected with equal prior probability: A has P(H) = ¾, B has P(H) = ¼. After ${heads} head${heads===1?'':'s'} in a row, what is the probability that the next flip is heads? Flips are independent given the coin.`,`P(next head | ${heads} previous head${heads===1?'':'s'})`,pred,'First update the probability of each coin, then average their head probabilities using those new weights.',`The posterior probability of A is ${frac(3**heads,3**heads+1)}. Predictive P(H) = ¾ × ${frac(3**heads,3**heads+1)} + ¼ × ${frac(1,3**heads+1)} = <b>${frac(3**(heads+1)+1,4*(3**heads+1))} ≈ ${fmt(pred*100)}%</b>.`,{unit:'probability',tolerance:.0005,answerText:frac(3**(heads+1)+1,4*(3**heads+1)),seconds:85});}
  ]};
- function parse(raw,unit='number'){
-  if(typeof raw!=='string'||raw.length>80)return null;
-  let s=raw.trim().replace(/,/g,'').replace(/[−–]/g,'-').replace(/^[$£€]/,'').replace(/\s/g,'');
-  const percent=s.endsWith('%');if(percent)s=s.slice(0,-1);
-  const pattern='[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)';
-  let value;
-  if(new RegExp(`^${pattern}$`).test(s))value=Number(s);
-  else {const parts=s.split('/');if(parts.length!==2||!parts.every(p=>new RegExp(`^${pattern}$`).test(p)))return null;const d=Number(parts[1]);if(d===0)return null;value=Number(parts[0])/d;if(unit==='percent'&&!percent)value*=100;}
-  if(percent&&unit!=='percent')value/=100;
-  return Number.isFinite(value)?value:null;
- }
- function correct(q,raw){
-  const v=parse(raw,q.unit),tolerance=q.tolerance+1e-10;
-  if(v!==null&&Math.abs(v-q.answer)<=tolerance)return true;
-  // A bare fraction in a percentage question can mean percentage points
-  // (200/3 = 66⅔%) or a fraction of one (2/3 = 66⅔%). Accept either
-  // interpretation when it equals the generated answer.
-  if(q.unit==='percent'&&typeof raw==='string'&&raw.includes('/')&&!raw.includes('%')){
-   const points=parse(raw,'number');
-   return points!==null&&Math.abs(points-q.answer)<=tolerance;
+ // Be tolerant of decimal punctuation on international keyboards. A single
+ // separator is a decimal by default (2,718 -> 2.718), while a grouped
+ // interpretation is ALSO accepted by the grader when appropriate (2,718
+ // may mean 2718). Repeated/mixed grouping is unambiguous. No locale setting
+ // or extra input syntax is required, including for fractions and percentages.
+ function numberValues(raw){
+  const values=[];
+  const add=v=>{if(Number.isFinite(v)&&!values.includes(v))values.push(v);};
+  if(/^[+-]?(?:\d+(?:[.,]\d*)?|[.,]\d+)$/.test(raw))add(Number(raw.replace(',','.')));
+  if(/^[+-]?\d{1,3}(?:\.\d{3})+(?:,\d+)?$/.test(raw)){
+   const first=raw.replace(/^[+-]/,'').split('.')[0];
+   if(first!=='0')add(Number(raw.replace(/\./g,'').replace(',','.')));
   }
+  if(/^[+-]?\d{1,3}(?:,\d{3})+(?:\.\d+)?$/.test(raw)){
+   const first=raw.replace(/^[+-]/,'').split(',')[0];
+   if(first!=='0')add(Number(raw.replace(/,/g,'')));
+  }
+  return values;
+ }
+ function parseCandidates(raw,unit='number'){
+  if(typeof raw!=='string'||raw.length>80)return [];
+  let s=raw.trim().replace(/[−–]/g,'-').replace(/^[$£€]/,'').replace(/\s/g,'');
+  const percent=s.endsWith('%');if(percent)s=s.slice(0,-1);
+  const parts=s.split('/');if(parts.length>2)return [];
+  const tops=numberValues(parts[0]),bottoms=parts.length===2?numberValues(parts[1]):[1];
+  const candidates=[];
+  for(const n of tops)for(const d of bottoms){
+   if(d===0)continue;
+   let v=n/d;
+   if(parts.length===2&&unit==='percent'&&!percent)v*=100;
+   if(percent&&unit!=='percent')v/=100;
+   if(Number.isFinite(v)&&!candidates.includes(v))candidates.push(v);
+  }
+  return candidates;
+ }
+ function parse(raw,unit='number'){return parseCandidates(raw,unit)[0]??null;}
+ function correct(q,raw){
+  const tolerance=q.tolerance+1e-10;
+  if(parseCandidates(raw,q.unit).some(v=>Math.abs(v-q.answer)<=tolerance))return true;
+  // Bare fractions for percentage answers can mean percentage points
+  // (200/3 = 66⅔%) or a fraction of one (2/3 = 66⅔%).
+  if(q.unit==='percent'&&typeof raw==='string'&&raw.includes('/')&&!raw.includes('%'))
+   return parseCandidates(raw,'number').some(v=>Math.abs(v-q.answer)<=tolerance);
   return false;
  }
  function display(q){if(q.kind==='choice')return q.choices.find(c=>c.correct).label;return (q.answerText||fmt(q.answer,6))+(q.unit==='percent'?'%':q.unit==='gold'?' gold':q.unit==='hours'?' hours':q.unit==='speed'?' km/h':'');}
  function generate(domain,level=1,index=null,r=Math.random){const templates=bank[domain]||bank.arithmetic;const i=index===null?int(0,templates.length-1,r):index%templates.length;return {...templates[i](level,r),domain,template:i};}
- return {generate,parse,correct,display,bank,fmt,frac,shuffle,choose,int,comb};
+ return {generate,parse,parseCandidates,correct,display,bank,fmt,frac,shuffle,choose,int,comb};
 })();
 if(typeof module!=='undefined'&&module.exports)module.exports=Maths;
 
@@ -689,13 +711,18 @@ const Curriculum = ((M) => {
   return {...q,id:meta.id,meta,level,signature};
  }
  function validate(q,raw){
-  if(q.kind==='number')return M.parse(raw,q.unit)!==null?{valid:true,correct:oldCorrect(q,raw)}:{valid:false,error:'Enter a number, a fraction such as 7/12, or a percentage. Do not include units.'};
+  if(q.kind==='number')return M.parse(raw,q.unit)!==null?{valid:true,correct:oldCorrect(q,raw)}:{valid:false,error:'Enter a number (e.g. 2.5 or 2,5), a fraction such as 7/12, or a percentage. Do not include units.'};
   if(q.kind==='choice')return Number.isInteger(raw)&&!!q.choices[raw]?{valid:true,correct:q.choices[raw].correct}:{valid:false,error:'Choose one of the answers.'};
   if(q.kind==='interval'){
-   const low=M.parse(raw?.low,q.unit),high=M.parse(raw?.high,q.unit);
-   if(low===null||high===null)return {valid:false,error:'Enter a numeric lower bound and upper bound. Fractions are accepted.'};
-   if(low>high)return {valid:false,error:'The lower bound must not exceed the upper bound.'};
+   const lows=M.parseCandidates(raw?.low,q.unit),highs=M.parseCandidates(raw?.high,q.unit);
+   if(!lows.length||!highs.length)return {valid:false,error:'Enter numerical bounds using either decimal point or comma. Fractions are accepted.'};
+   // A separator followed by three digits may be a decimal or a thousands
+   // separator. Grade either valid interpretation, including interval bounds.
+   const pairs=lows.flatMap(low=>highs.map(high=>({low,high}))).filter(p=>p.low<=p.high);
+   if(!pairs.length)return {valid:false,error:'The lower bound must not exceed the upper bound.'};
    const eps=1e-9;
+   const chosen=pairs.find(({low,high})=>low<=q.answer+eps&&high>=q.answer-eps&&high-low<=q.maxWidth+eps)||pairs[0];
+   const {low,high}=chosen;
    return {valid:true,correct:low<=q.answer+eps&&high>=q.answer-eps&&high-low<=q.maxWidth+eps,width:high-low,contains:low<=q.answer+eps&&high>=q.answer-eps};
   }
   if(q.kind==='staged'){
@@ -719,9 +746,22 @@ const MathInput = (()=>{
   if(typeof raw!=='string'||raw.length>180)return null;
   const s=raw.trim().replace(/[−–]/g,'-').replace(/[×·]/g,'*').replace(/÷/g,'/').replace(/π/g,'pi').replace(/\*\*/g,'^');
   if(!s||/[^0-9A-Za-z_+\-*/^().,\s]/.test(s))return null;
+  // A comma inside a numeric literal is a decimal separator, NOT a list
+  // of function arguments. The parser only permits one-argument functions.
+  const numberToken=/^(?:\d{1,3}(?:\.\d{3})+,\d+|\d{1,3}(?:,\d{3})+\.\d+|\d{1,3}(?:\.\d{3}){2,}|\d{1,3}(?:,\d{3}){2,}|\d+(?:[.,]\d*)?|[.,]\d+)(?:[eE][+-]?\d+)?/;
+  const normalizeNumber=raw=>{
+   const at=raw.search(/[eE]/),head=at<0?raw:raw.slice(0,at),exponent=at<0?'':raw.slice(at);
+   const dotGrouped=/^\d{1,3}(?:\.\d{3})+(?:,\d+)?$/.test(head);
+   const commaGrouped=/^\d{1,3}(?:,\d{3})+(?:\.\d+)?$/.test(head);
+   let mantissa=head;
+   if(dotGrouped&&(head.includes(',')||head.split('.').length>2))mantissa=head.replace(/\./g,'').replace(',','.');
+   else if(commaGrouped&&(head.includes('.')||head.split(',').length>2))mantissa=head.replace(/,/g,'');
+   else mantissa=head.replace(',','.');
+   return String(Number(mantissa+exponent));
+  };
   const tokens=[];let pos=0;
-  while(pos<s.length){const tail=s.slice(pos),m=/^\s+/.exec(tail)||/^(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?/.exec(tail)||/^[a-zA-Z]+/.exec(tail)||/^[+\-*/^(),]/.exec(tail);
-   if(!m)return null;pos+=m[0].length;if(!/^\s/.test(m[0]))tokens.push(m[0]);if(tokens.length>100)return null;}
+  while(pos<s.length){const tail=s.slice(pos),num=numberToken.exec(tail),m=/^\s+/.exec(tail)||num||/^[a-zA-Z]+/.exec(tail)||/^[+\-*/^()]/.exec(tail);
+   if(!m)return null;pos+=m[0].length;if(!/^\s/.test(m[0]))tokens.push(m===num?normalizeNumber(m[0]):m[0]);if(tokens.length>100)return null;}
   let i=0,depth=0,operations=0;
   const checked=v=>{if(!Number.isFinite(v)||++operations>100)throw Error('Invalid expression');return v;};
   const eat=t=>{if(tokens[i]===t){i++;return true;}return false;};
@@ -750,7 +790,7 @@ const MathInput = (()=>{
    // Preserve existing simple-number, fraction and percentage conventions first.
    if(value!==null){const result=previous(q,raw);if(result.correct)return result;return {valid:true,correct:false};}
    let text=typeof raw==='string'?raw.trim():'',percent=text.endsWith('%');if(percent)text=text.slice(0,-1);
-   value=evaluate(text);if(value===null)return {valid:false,error:'Use a number, fraction, or expression with + − * / ^, parentheses, sqrt(), exp(), ln(), pi or e. No variables. ln and log mean natural logarithm.'};
+   value=evaluate(text);if(value===null)return {valid:false,error:'Use a number (2.5 or 2,5), fraction, or expression with + − * / ^, parentheses, sqrt(), exp(), ln(), pi or e. No variables. ln and log mean natural logarithm.'};
    if(percent&&q.unit!=='percent')value/=100;
    return {valid:true,correct:Math.abs(value-q.answer)<=q.tolerance+1e-10};
   };
@@ -4001,7 +4041,7 @@ const Game = (() => {
   const index=s.deck.shift();s.lastTemplate=index;let q;
   for(let i=0;i<16;i++){q=Sprint.generate(s.profile,index);if(!s.recent.includes(q.id+'|'+q.expression))break;}
   s.recent.push(q.id+'|'+q.expression);s.recent=s.recent.slice(-24);s.q=q;s.phase='question';
-  openModal(head('THE QUICK COUNT · '+Sprint.profiles[s.profile].label,'Keep the count alive.')+`<div class="modal-body"><div class="sprint-score-row"><div class="sprint-score"><span>CONSECUTIVE CORRECT</span><strong id="sprintStreak">${s.streak}</strong></div><div class="sprint-record"><span>PERSONAL BEST</span><strong>${Math.max(s.previousBest,s.streak)}</strong><small>${esc(s.name)}</small></div></div><div class="sprint-time-row"><span>${esc(q.skill)}</span><strong id="sprintClock">${q.seconds.toFixed(1)}s</strong></div><div class="timer-track sprint-track"><div class="timer-fill" id="sprintTimerFill" style="width:100%"></div></div><div class="question-equation sprint-equation ${q.expression.length>24?'small':''}">${esc(q.expression)}</div><form id="sprintForm" autocomplete="off"><label class="answer-label" for="sprintAnswer">Your answer · decimal or fraction</label><div class="answer-row"><input id="sprintAnswer" class="answer-input" type="text" inputmode="decimal" spellcheck="false" maxlength="80" aria-describedby="sprintError" placeholder="Keep it going…" autofocus><button class="btn primary" type="submit">Answer →</button></div><div id="sprintError" class="inline-error" aria-live="polite"></div></form><div class="sprint-foot"><span>${s.streak?'✓ '+s.streak+' in a row · saved':'Your first answer starts the streak'}</span><button class="hint-btn" id="bankSprint">Finish & keep score</button></div><p class="small-note">A fresh ${q.seconds}-second limit for this problem. No pause while solving. Changing tabs ends the attempt.</p></div>`,'sprint');
+  openModal(head('THE QUICK COUNT · '+Sprint.profiles[s.profile].label,'Keep the count alive.')+`<div class="modal-body"><div class="sprint-score-row"><div class="sprint-score"><span>CONSECUTIVE CORRECT</span><strong id="sprintStreak">${s.streak}</strong></div><div class="sprint-record"><span>PERSONAL BEST</span><strong>${Math.max(s.previousBest,s.streak)}</strong><small>${esc(s.name)}</small></div></div><div class="sprint-time-row"><span>${esc(q.skill)}</span><strong id="sprintClock">${q.seconds.toFixed(1)}s</strong></div><div class="timer-track sprint-track"><div class="timer-fill" id="sprintTimerFill" style="width:100%"></div></div><div class="question-equation sprint-equation ${q.expression.length>24?'small':''}">${esc(q.expression)}</div><form id="sprintForm" autocomplete="off"><label class="answer-label" for="sprintAnswer">Your answer · decimals (2.5 or 2,5) or fraction</label><div class="answer-row"><input id="sprintAnswer" class="answer-input" type="text" inputmode="decimal" spellcheck="false" maxlength="80" aria-describedby="sprintError" placeholder="Keep it going…" autofocus><button class="btn primary" type="submit">Answer →</button></div><div id="sprintError" class="inline-error" aria-live="polite"></div></form><div class="sprint-foot"><span>${s.streak?'✓ '+s.streak+' in a row · saved':'Your first answer starts the streak'}</span><button class="hint-btn" id="bankSprint">Finish & keep score</button></div><p class="small-note">A fresh ${q.seconds}-second limit for this problem. No pause while solving. Changing tabs ends the attempt.</p></div>`,'sprint');
   $('sprintAnswer').focus({preventScroll:true});s.started=performance.now();s.deadline=s.started+q.seconds*1000;
   $('sprintForm').onsubmit=e=>{e.preventDefault();submitSprint($('sprintAnswer').value);};$('bankSprint').onclick=()=>finishSprint('stopped');
  }
@@ -4070,8 +4110,9 @@ const Game = (() => {
   s.answered=false;s.hinted=false;s.stageHinted=false;s.stageIndex=0;s.stageResults=[];s.stageDone=false;s.draft=null;s.activeElapsed=0;s.answerResult=null;setQuestionClock(s);save();renderChallenge();
  }
  function answerGuidance(q){
-  if(q.expressionAllowed)return `Exact expressions accepted: 1-exp(-2), sqrt(3)/2, ln(4), pi. Use * for multiplication and ^ for powers. Or round decimals to ${q.precision??6} places; whole numbers need no decimals.`;
-  return q.unit==='probability'?'Round decimals to at least 3 decimal places, or enter a fraction / percentage.':q.tolerance>=.005?'Round decimals to 2 places, or use a fraction.':q.tolerance>=.000005?'Use a fraction or round decimals to at least 6 places. Whole numbers need no decimals.':q.tolerance<1e-9?'Use an exact fraction or exact value.':'Use an exact value or fraction; for recurring decimals, use at least 8 decimal places.';
+  const notation=' Both 2.718 and 2,718 are accepted as decimal notation.';
+  if(q.expressionAllowed)return `Exact expressions accepted: 1-exp(-2), sqrt(3)/2, ln(4), pi. Use * for multiplication and ^ for powers. Or round decimals to ${q.precision??6} places; whole numbers need no decimals.`+notation;
+  return (q.unit==='probability'?'Round decimals to at least 3 decimal places, or enter a fraction / percentage.':q.tolerance>=.005?'Round decimals to 2 places, or use a fraction.':q.tolerance>=.000005?'Use a fraction or round decimals to at least 6 places. Whole numbers need no decimals.':q.tolerance<1e-9?'Use an exact fraction or exact value.':'Use an exact value or fraction; for recurring decimals, use at least 8 decimal places.')+notation;
  }
  function stepReviewHTML(steps){if(!Array.isArray(steps))return '';return `<div class="step-review-list">${steps.slice(0,8).filter(v=>v&&typeof v==='object').map((v,i)=>`<div class="step-review ${v.correct?'passed':'review'}"><strong>${v.correct?'✓':'↺'} Step ${i+1}: ${v.correct?'correct':v.timeout?'timed out':'needs review'}</strong><span>Your answer: ${esc(String(v.yours??'Not recorded').slice(0,300))}</span><span>Expected: ${esc(String(v.expected??'').slice(0,500))}</span></div>`).join('')}</div>`;}
  function renderChallenge(){
@@ -4404,8 +4445,8 @@ const Game = (() => {
  }
  function tideInput(q,b){
   if(q.kind==='choice')return `<div class="choice-grid">${q.choices.map((v,i)=>`<button class="choice" data-tide-choice="${i}"><span class="choice-num">${i+1}</span>${esc(v.label)}</button>`).join('')}</div>`;
-  if(q.kind==='interval')return `<form id="tideAnswerForm" autocomplete="off"><p class="answer-guidance" id="tideGuidance">Enclose the value in an interval no wider than ${Maths.fmt(q.maxWidth)}.</p><div class="interval-fields"><div><label class="answer-label" for="tideLower">Lower bound</label><input id="tideLower" class="answer-input" type="text" maxlength="80" autofocus></div><span class="interval-separator">≤ x ≤</span><div><label class="answer-label" for="tideUpper">Upper bound</label><input id="tideUpper" class="answer-input" type="text" maxlength="80"></div></div><div class="modal-actions"><button class="btn primary" id="tideSubmit" type="submit">Commit bounds →</button></div><div id="tideError" class="inline-error" aria-live="polite"></div></form>`;
-  return `<form id="tideAnswerForm" autocomplete="off"><label class="answer-label" for="tideAnswer">${q.unit==='probability'?'Probability · fraction, decimal or %':q.unit==='percent'?'Percentage · 25, 25% or a fraction':'Your answer · fractions accepted'}</label><div class="answer-row"><input id="tideAnswer" class="answer-input" type="text" inputmode="text" spellcheck="false" maxlength="${q.expressionAllowed?180:80}" aria-describedby="tideGuidance tideError" autofocus><button class="btn primary" id="tideSubmit" type="submit">${b.plan.pace==='rapid'?'Commit →':'Answer →'}</button></div><p class="answer-guidance" id="tideGuidance">${q.expressionAllowed?answerGuidance(q):b.plan.pace==='rapid'?'Exact values or fractions. Each question has its own timer.':q.unit==='probability'?'Use a fraction, a percentage, or at least 3 decimal places.':q.tolerance>=.005?'Two decimal places, or an exact fraction.':q.tolerance<1e-9?'An exact answer or exact fraction is required.':'Use an exact value or fraction; recurring decimals need at least 8 places.'}</p><div id="tideError" class="inline-error" aria-live="polite"></div></form>`;
+  if(q.kind==='interval')return `<form id="tideAnswerForm" autocomplete="off"><p class="answer-guidance" id="tideGuidance">Enclose the value in an interval no wider than ${Maths.fmt(q.maxWidth)}. Decimal commas and points both work.</p><div class="interval-fields"><div><label class="answer-label" for="tideLower">Lower bound</label><input id="tideLower" class="answer-input" type="text" maxlength="80" autofocus></div><span class="interval-separator">≤ x ≤</span><div><label class="answer-label" for="tideUpper">Upper bound</label><input id="tideUpper" class="answer-input" type="text" maxlength="80"></div></div><div class="modal-actions"><button class="btn primary" id="tideSubmit" type="submit">Commit bounds →</button></div><div id="tideError" class="inline-error" aria-live="polite"></div></form>`;
+  return `<form id="tideAnswerForm" autocomplete="off"><label class="answer-label" for="tideAnswer">${q.unit==='probability'?'Probability · fraction, decimal or %':q.unit==='percent'?'Percentage · 25, 25% or a fraction':'Your answer · fractions accepted'}</label><div class="answer-row"><input id="tideAnswer" class="answer-input" type="text" inputmode="text" spellcheck="false" maxlength="${q.expressionAllowed?180:80}" aria-describedby="tideGuidance tideError" autofocus><button class="btn primary" id="tideSubmit" type="submit">${b.plan.pace==='rapid'?'Commit →':'Answer →'}</button></div><p class="answer-guidance" id="tideGuidance">${q.expressionAllowed?answerGuidance(q):(b.plan.pace==='rapid'?'Exact values or fractions. Each question has its own timer.':q.unit==='probability'?'Use a fraction, a percentage, or at least 3 decimal places.':q.tolerance>=.005?'Two decimal places, or an exact fraction.':q.tolerance<1e-9?'An exact answer or exact fraction is required.':'Use an exact value or fraction; recurring decimals need at least 8 places.')+' Decimal comma or point both accepted.'}</p><div id="tideError" class="inline-error" aria-live="polite"></div></form>`;
  }
  function tideRender(){
   const b=tideBattle;if(!b)return;const q=b.q,root=b.root,rapid=b.plan.pace==='rapid',kraken=b.quest?.id==='kraken',phase=kraken?Tides.phases[b.phase]:null;
@@ -4498,7 +4539,7 @@ const Game = (() => {
  }
  init();
  // State getters support local diagnostics and automated regression tests.
- return {get state(){return state;},get session(){return session;},get sprintRun(){return sprintRun;},get tideBattle(){return tideBattle;},get modalKind(){return modalKind;},quests,notes,version:'3.8.0'};
+ return {get state(){return state;},get session(){return session;},get sprintRun(){return sprintRun;},get tideBattle(){return tideBattle;},get modalKind(){return modalKind;},quests,notes,version:'3.8.1'};
 })();
 </script>
 </body></html>
